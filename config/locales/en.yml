@@ -2,8 +2,8 @@ en:
   seo:
     brand: BuSensei
     description: Study materials for level 1 of the Japan Kanji Aptitude Test (Kanji Kentei) and searchable database of Japanese proverbs and idioms.
-    author: Bret Mayer, Pascal Pixel
-    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, BuSensei, ぶ先生, ぶせんせい, 漢字検定, 漢検, 1級, ブレット, メイヤー, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
+    author: Bret Mayer
+    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, ぶ先生, ぶせんせい, 漢字検定, 漢検, 1級, ブレット, メイヤー, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
   actions:
     more: More
     search: Search
@@ -28,32 +28,31 @@ en:
       header: |
         Welcome to the BuSensei kanji repository ('◇')ゞ
       sub_header: |
-        ★ Studying's a grind… let us help you level up!
+        JP⇄EN database of kanji compounds and proverbs, including...
+
         ★ Kanji Kentei 1 Vocab, ateji, proverbs and 4-character idioms
+
         ★ Kotowaza Kentei all levels complete with English translations and breakdowns
       intro: Hi, I'm Bret! Please enjoy my Japanese study materials!
       latest_video: Latest Video
       latest_article: Latest Blog
     about:
       title: About
-      headers:
-        name: Name
-        nicknames: Nicknames
-        age: Age
-        nationality: Nationality
-        hobbies: Hobbies
-      bret:
-        name: Bret Mayer
-        nicknames: ぶ先生、漢字ヲタク、漢字の兄さん、漢字界の黒船
-        age: 34
-        nationality: 🇺🇸 United States
-        hobbies: kanji study, reading, drawing
-      pascal:
-        name: Pascal Pixel
-        nicknames: Pixel, Enkera, Enki, パスカル
-        age: 27
-        nationality: 🇪🇺 European Union
-        hobbies: obscure writing systems, programming, design
+      name:
+        title: Name
+        body: Bret Mayer
+      nicknames:
+        title: Nicknames
+        body: ぶ先生、漢字ヲタク、漢字の兄さん、漢字界の黒船
+      age:
+        title: Age
+        body: 34
+      nationality:
+        title: Nationality
+        body: USA
+      hobbies:
+        title: Hobbies
+        body: kanji study, reading, drawing
   items:
     index:
       intro: All my study materials compiled from the Kanji Kentei and Kotowaza Kentei in one convenient database!

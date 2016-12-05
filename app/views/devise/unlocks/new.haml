@@ -1,5 +1,5 @@
 %h5
-  -# %span.mdi-replay
+  %i.mdi.mdi-replay
   = t('.resend_unlock_instructions')
 = simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
   = f.error_notification

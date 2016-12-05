@@ -1,5 +1,6 @@
 %h1
-  Blog
+  %span.mdi.mdi-cards
+  Articles
 %br
 - if user_signed_in?
   = link_to 'New Article', new_article_path, class: 'btn btn-success'

@@ -1,115 +1,263 @@
 .row
-  .col-sm-12
-    %h1= t('.title')
-    %p A collaboration between the first foreigner in Japan to ever get the Kanji Kentei 1 Certification, Bret Mayer (aka BuSensei) & former TNW Head of Design Pascal Pixel of Superpencil design and development agency.
+  .col-sm-3
+    = image_tag 'bret_tv.jpg', class: 'rounded'
+  .col-sm-9
+    %h2= t('.title')
+    %ul.list-unstyled
+      %li
+        %b= t('.name.title')
+        &nbsp;
+        = t('.name.body')
+      %li
+        %b= t('.nicknames.title')
+        &nbsp;
+        = t('.nicknames.body')
+      %li
+        %b= t('.age.title')
+        &nbsp;
+        = t('.age.body')
+      %li
+        %b= t('.nationality.title')
+        &nbsp;
+        = t('.nationality.body')
+      %li
+        %b= t('.hobbies.title')
+        &nbsp;
+        = t('.hobbies.body')
+    %ul.list-unstyled
+      %li
+        %span.mdi.mdi-twitter
+        Twitter
+        %span.tag.tag-default @BuSensei
+      %li
+        %span.mdi.mdi-facebook
+        Facebook
+        %span.tag.tag-default /Bret Mayer
+      %li
+        %span.mdi.mdi-message
+        LINE
+        %span.tag.tag-default busensei
+      %li
+        %span.mdi.mdi-email
+        Email
+        %span.tag.tag-default busensei(at)gmail(dot)com
+%br
 .row
-  .col-md-6
+  .col-sm-3
+    = image_tag 'certs.jpg', class: 'rounded'
+  .col-sm-9
+    %h2 Achievements & Certifications
     .row
-      .col-xs-3
-        .card.portrait= image_tag 'bret.gif', class: 'img-full', alt: 'Bret Mayer'
-      .col-xs-9
-        %ul.list-unstyled
-          %li
-            %span.tag.tag-default= t('.headers.name')
-            = t('.bret.name')
-          %li
-            %span.tag.tag-default= t('.headers.nicknames')
-            = t('.bret.nicknames')
-          %li
-            %span.tag.tag-default= t('.headers.age')
-            = t('.bret.age')
-          %li
-            %span.tag.tag-default= t('.headers.nationality')
-            = t('.bret.nationality')
-          %li
-            %span.tag.tag-default= t('.headers.hobbies')
-            = t('.bret.hobbies')
-          %li
-            %span.tag.tag-default
-              Twitter
-            @busensei
-          %li
-            %span.tag.tag-default
-              Facebook
-            \/Bret_Mayer
-          %li
-            %span.tag.tag-default
-              LINE
-            busensei
-          %li
-            %span.tag.tag-default
-              Email
-            busensei(at)gmail(dot)com
-          %li
-            %span.tag.tag-default
-              Achievements & Certifications
-            %ul.list-unstyled
-              %li Certified Kanji Instructor (漢字教育士) (Japan Kanji Aptitude Testing Foundation, Ritsumeikan University)
-              %li Shirakawa Shizuka Award for Excellence in Kanji Education
-              %li Japan Kanji Aptitude Test Level 1
-          %li
-            %span.tag.tag-default
-              Appeared on TV & Radio
-            %ul.list-unstyled
-              %li 日本テレビ『１億人の大質問⁉笑ってコラえて！』
-              %li BS JAPAN『ワタシが日本に住む理由』
-              %li NHK WORLD
-              %li 静岡朝日テレビ『とびっきり！静岡』
-              %li テレビ東京『L4YOUプラス』
-              %li ＴＯＫＹＯ　ＭＸ『東京号泣教室』
-              %li 大阪ほんわかテレビ
-              %li ＴＢＳテレビ『アメージパング』
-              %li 静岡だいいちテレビ『〇ごとワイド』
-              %li テレビ静岡『てっぺん静岡』
-              %li テレビ静岡『スーパーニュース』
-              %li NHK静岡『たっぷり静岡』
-              %li K-MIX静岡ＦＭ『モーニングラジラ』
-          %li
-            %span.tag.tag-default Appeared in Publications
-            %ul.list-unstyled
-              %li Cool Japan and the World: Reading Newspapers Today - 英字紙で読む日本と世界
-              %li Highlighting Japan
-              %li The Japan News
-              %li Tra-maga Fellow Academy - トラマガ記事フェローアカデミー
-              %li womo静岡
-              %li womo浜松
-              %li 漢検生涯学習ネットワーク会員通信
-              %li 静岡新聞
-              %li 趣味の文具箱
-              %li 中日新聞
-              %li 日経新聞
-              %li 浜松経済新聞
-              %li 読売新聞
-  .col-md-6
+      .col-sm-8
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Certified Kanji Instructor (漢字教育士) (Japan Kanji Aptitude Testing Foundation, Ritsumeikan University)
+                %p 日本漢字能力検定協会及び立命館大学認定漢字教育士
+      .col-sm-4
+        .card.card-inverse.bg-info
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Shirakawa Shizuka Award for Excellence in Kanji Education
+                %p 第4回白川静漢字教育賞（優秀賞）
+
     .row
-      .col-xs-3
-        .card.portrait= image_tag 'pascal.gif', class: 'img-full', alt: 'Pascal Pixel'
-      .col-xs-9
-        %ul.list-unstyled
-          %li
-            %span.tag.tag-default= t('.headers.name')
-            = t('.bret.name')
-          %li
-            %span.tag.tag-default= t('.headers.nicknames')
-            = t('.pascal.nicknames')
-          %li
-            %span.tag.tag-default= t('.headers.age')
-            = t('.pascal.age')
-          %li
-            %span.tag.tag-default= t('.headers.nationality')
-            = t('.pascal.nationality')
-          %li
-            %span.tag.tag-default= t('.headers.hobbies')
-            = t('.pascal.hobbies')
-          %li
-            %span.tag.tag-default
-              Twitter
-            @pascalpixel
-          %li
-            %span.tag.tag-default
-              Email
-            pascal(at)superpencil(dot)com
-          %li
-            %span.tag.tag-default
-              Website
-            pascalpixel.com
+      .col-sm-4
+        .card.card-inverse.bg-success
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 1
+                %p 日本漢字能力検定一級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level pre-1
+                %p 日本漢字能力検定準一級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 2
+                %p 日本漢字能力検定２級
+    .row
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level pre-2
+                %p 日本漢字能力検定準２級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 3
+                %p 日本漢字能力検定３級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 4
+                %p 日本漢字能力検定４級
+    .row
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 5
+                %p 日本漢字能力検定５級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 6
+                %p 日本漢字能力検定６級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 7
+                %p 日本漢字能力検定７級
+                %td
+                  %span.tag.tag-success 満点！
+                  %br
+                  %span.tag.tag-success Perfect score!
+    .row
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 8
+                %p 日本漢字能力検定８級
+                %td
+                  %span.tag.tag-success 満点！
+                  %br
+                  %span.tag.tag-success Perfect score!
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 9
+                %p 日本漢字能力検定９級
+                %td
+                  %span.tag.tag-success 満点！
+                  %span.tag.tag-success Perfect score!
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Kanji Aptitude Test Level 10
+                %p 日本漢字能力検定１０級
+                %td
+                  %span.tag.tag-success 満点！
+                  %span.tag.tag-success Perfect score!
+    .row
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japan Proverb Test Level 2
+                %p 諺能力検定２級
+      .col-sm-4
+        .card
+          .card-block
+            .row
+              .col-xs-2
+                %h2.mdi.mdi-certificate
+              .col-xs-10
+                %p Japanese-Language Proficiency Test Level N1
+                %p 日本語能力試験レベルN1
+
+%br
+.row
+  .col-sm-3
+  .col-sm-9
+    %h2 In the Media 漢字RPG
+    .row
+      .col-md-4
+        %h5 Media Appearances
+        %ul.list-group
+          %li.list-group-item 日本テレビ『１億人の大質問⁉笑ってコラえて！』
+          %li.list-group-item BS JAPAN『ワタシが日本に住む理由』
+          %li.list-group-item NHK WORLD
+          %li.list-group-item 静岡朝日テレビ『とびっきり！静岡』
+          %li.list-group-item テレビ東京『L4YOUプラス』
+          %li.list-group-item ＴＯＫＹＯ　ＭＸ『東京号泣教室』
+          %li.list-group-item 大阪ほんわかテレビ
+          %li.list-group-item ＴＢＳテレビ『アメージパング』
+          %li.list-group-item 静岡だいいちテレビ『〇ごとワイド』
+          %li.list-group-item テレビ静岡『てっぺん静岡』
+          %li.list-group-item テレビ静岡『スーパーニュース』
+          %li.list-group-item NHK静岡『たっぷり静岡』
+          %li.list-group-item K-MIX静岡ＦＭ『モーニングラジラ』
+      .col-md-4
+        %h5 Publications
+        %ul.list-group
+          %li.list-group-item Cool Japan and the World: Reading Newspapers Today - 英字紙で読む日本と世界
+          %li.list-group-item Highlighting Japan
+          %li.list-group-item The Japan News
+          %li.list-group-item Tra-maga Fellow Academy - トラマガ記事フェローアカデミー
+          %li.list-group-item womo静岡
+          %li.list-group-item womo浜松
+          %li.list-group-item 漢検生涯学習ネットワーク会員通信
+          %li.list-group-item 静岡新聞
+          %li.list-group-item 趣味の文具箱
+          %li.list-group-item 中日新聞
+          %li.list-group-item 日経新聞
+          %li.list-group-item 浜松経済新聞
+          %li.list-group-item 読売新聞
+      .col-md-4
+        %h5 Affiliated Groups
+        %ul.list-group
+          %li.list-group-item Gettysburg College
+          %li.list-group-item IM JAPAN - アイム・ジャパン
+          %li.list-group-item 漢字を語る会『楷の木』
+          %li.list-group-item 漢検生涯学習ネットワーク
+          %li.list-group-item 日本漢字能力検定協会
+          %li.list-group-item 立命館大学
+          %li.list-group-item Z-KAI

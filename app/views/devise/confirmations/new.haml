@@ -1,5 +1,5 @@
 %h5
-  -# %span.mdi-replay
+  %i.mdi.mdi-replay
   = t('.resend_confirmation_instructions')
 %hr
 = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|

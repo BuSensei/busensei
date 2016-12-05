@@ -7,25 +7,20 @@
         - if item.category
           %p
             - if item.category    == 'Vocab'
-              %span.text-success
-                -# %span.mdi-dictionary
-                Vocabulary
+              %span.mdi.mdi-dictionary
+              Vocabulary
             - elsif item.category == 'kotowaza'
-              %span.text-info
-                -# %span.mdi-duck
-                Proverb
+              %span.mdi.mdi-duck
+              Proverb
             - elsif item.category == 'yjjg'
-              %span.text-warning
-                -# %span.mdi-cat
-                Idiom
+              %span.mdi.mdi-cat
+              Idiom
             - elsif item.category == 'ateji'
-              %span.text-danger
-                -# %span.mdi-shuffle
-                Ateji
+              %span.mdi.mdi-shuffle
+              Ateji
             - else
-              %span.text-primary
-                -# %span.mdi-database
-                Other
+              %span.mdi.mdi-database
+              Other
         - if item.reading
           %p
             = item.reading.gsub(':', '<br>').gsub(';', '<br>').gsub('②', '<br>②').gsub('①', '<br>①').html_safe

@@ -22,12 +22,6 @@ small
   font-smooth: auto
   -webkit-font-smoothing: subpixel-antialiased
 
-.img-full
-  width: 100%
-  height: auto
-  image-rendering: pixelated
-  opacity: 0.7
-
 .navbar-brand
   font-weight: 400
   img
@@ -93,17 +87,8 @@ a:hover .card
   .card-block
     padding-bottom: .6rem
 
-.card.bg-primary,
-.card.bg-info,
-.card.bg-success,
-.card.bg-warning,
-.card.bg-danger,
-.btn-primary,
-.btn-info,
-.btn-success,
-.btn-warning,
-.btn-danger
-  color: rgba(0,0,0,0.7)
+.card.bg-primary
+  color: darken($brand-primary, 25%)
 
 .vertical-rl
   writing-mode: vertical-rl
@@ -126,38 +111,8 @@ a:hover .card
 //   flex-wrap: wrap
 //   height: 100%
 
-.portrait
-  background: $gray-dark
-
 .tag
   margin-top: 0.2em
-
-h1.brand
-  .tag-default
-    background: rgba(0,0,0,0.7)
-    margin: 0
-    margin-right: -0.35em
-    padding: 0em 0.15em 0.1em 0.15em
-.bg-primary
-  h1.brand
-    .tag-default
-      color: $brand-primary
-.bg-success
-  h1.brand
-    .tag-default
-      color: $brand-success
-.bg-info
-  h1.brand
-    .tag-default
-      color: $brand-info
-.bg-warning
-  h1.brand
-    .tag-default
-      color: $brand-warning
-.bg-danger
-  h1.brand
-    .tag-default
-      color: $brand-danger
 
 .superpencil
   font-size: 80%

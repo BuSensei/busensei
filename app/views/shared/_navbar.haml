@@ -2,36 +2,36 @@
   %ul.nav.nav-pills.float-md-left
     %li.nav-item
       = link_to root_path, class: 'nav-link text-primary' do
-        -# %span.mdi-book-open-page-variant
+        -# %span.mdi.mdi-book-open-page-variant
         = t('.brand')
     %li.nav-item
-      = link_to vocabulary_path, class: 'nav-link text-success' do
-        -# %span.mdi-dictionary
+      = link_to vocabulary_path, class: 'nav-link' do
+        -# %span.mdi.mdi-dictionary
         = t('actions.vocabulary')
     %li.nav-item
-      = link_to proverbs_path, class: 'nav-link text-info' do
-        -# %span.mdi-duck
+      = link_to proverbs_path, class: 'nav-link' do
+        -# %span.mdi.mdi-duck
         = t('actions.proverbs')
     %li.nav-item
-      = link_to idioms_path, class: 'nav-link text-warning' do
-        -# %span.mdi-cat
+      = link_to idioms_path, class: 'nav-link' do
+        -# %span.mdi.mdi-cat
         = t('actions.idioms')
     %li.nav-item
-      = link_to ateji_path, class: 'nav-link text-danger' do
-        -# %span.mdi-shuffle
+      = link_to ateji_path, class: 'nav-link' do
+        -# %span.mdi.mdi-shuffle
         = t('actions.ateji')
   %ul.nav.nav-pills.float-md-right
     %li.nav-item
       = link_to articles_path, class: 'nav-link' do
-        -# %span.mdi-cards
+        -# %span.mdi.mdi-cards
         = t('.articles')
     %li.nav-item
       = link_to videos_path, class: 'nav-link' do
-        -# %span.mdi-video
+        -# %span.mdi.mdi-video
         = t('.videos')
     %li.nav-item
       = link_to about_path, class: 'nav-link' do
-        -# %span.mdi-account
+        -# %span.mdi.mdi-account
         = t('.about')
     %li.nav-item
       - if I18n.locale == :en

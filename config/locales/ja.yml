@@ -1,9 +1,9 @@
 ja:
   seo:
-    brand: BuSensei
+    brand: ぶ先生
     description: 英訳と解説付き漢字検定1級の単語や熟語、当て字、四字熟語などのデータベース。又、ことわざ検定10級から2級までの問題全問。
-    author: Bret Mayer, Pascal Pixel
-    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, BuSensei, ぶ先生, ぶせんせい, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
+    author: ブレット・メイヤー
+    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, ぶ先生, ぶせんせい, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
   actions:
     more: もっと
     search: 検索
@@ -17,7 +17,7 @@ ja:
     all_items: ぶ先生大字典
   shared:
     navbar:
-      brand: BuSensei
+      brand: ぶ先生
       test: 試験
       study_materials: 勉強帳
       articles: ぶログ
@@ -28,33 +28,32 @@ ja:
       header: |
         ぶ先生の書斎へようこそ！('◇')ゞ
       sub_header: |
-        ★漢字を経験値の様に稼ぎ知識のレベル上げとしよう！('◇')ゞ
+        漢字と熟語とことわざの日英データベース。
+
         ★漢字検定1級の熟語や当て字、諺、四字熟語
+
         ★ことわざ検定全てのレベル、英訳解説付き諺・故事・成語。
         どうぞ、参考までにご覧ください。
-      intro: 漢字ヲタク　ブレット・メイヤーです。通称『BuSensei』！漢字や諺の勉強資料を纏めてアップした！楽しんで漢字を勉強してください！
+      intro: 漢字ヲタク　ブレット・メイヤーです。通称『ぶ先生』！漢字や諺の勉強資料を纏めてアップした！楽しんで漢字を勉強してください！
       latest_video: 最新動画
       latest_article: 最新ぶログ
     about:
       title: About
-      headers:
-        name: Name
-        nicknames: Nicknames
-        age: Age
-        nationality: Nationality
-        hobbies: Hobbies
-      bret:
-        name: ブレット・メイヤー
-        nicknames: ぶ先生、漢字ヲタク、漢字の兄さん、漢字界の黒船
-        age: 34
-        nationality: 🇺🇸 アメリカ合衆国
-        hobbies: kanji study, reading, drawing
-      pascal:
-        name: パスカル・ピクセル
-        nicknames: Pixel, Enkera, Enki
-        age: 27
-        nationality: 🇪🇺 欧州連合
-        hobbies: obscure writing systems, programming, design
+      name:
+        title: Name
+        body: Bret Mayer
+      nicknames:
+        title: Nicknames
+        body: ぶ先生、漢字ヲタク、漢字の兄さん、漢字界の黒船
+      age:
+        title: Age
+        body: 34
+      nationality:
+        title: Nationality
+        body: USA
+      hobbies:
+        title: Hobbies
+        body: kanji study, reading, drawing
   items:
     index:
       intro: 漢字と熟語とことわざの日英データベース。全てのカテゴリー。

@@ -1,19 +1,22 @@
-.card.bg-primary.mb-2{class: color}
+.card.bg-primary.mb-2
   .card-block
     .row
       .col-sm-4
-        %h1.brand
-          %span.tag.tag-default kanji
-          RPG
-        %h2= t('shared.navbar.study_materials')
+        %h1
+          ぶ先生
+        %p
+          %span.mdi.mdi-book-open-page-variant
+          = t('shared.navbar.study_materials')
+          %br
+          %span.mdi{class: "mdi-#{icon}"}
+          = title
+      .col-sm-8
+        %h1 &nbsp;
+        %p= intro
         - if user_signed_in?
           = link_to 'New Item',
                     new_item_path,
                     class: 'btn btn-success'
-      .col-sm-8
-        %h2
-          = title
-        %p= intro
 = paginate items, theme: 'twitter-bootstrap-4'
 .row#masonry
   - items.each_slice(4) do |four|

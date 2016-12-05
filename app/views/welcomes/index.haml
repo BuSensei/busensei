@@ -1,0 +1,74 @@
+.row
+  .col-md-4
+    .card.bg-primary
+      .card-block
+        %h1 ぶ先生
+        %h5= simple_format t('.header')
+        %p= simple_format t('.sub_header')
+      .col-md-6
+        .row
+          .col-xs-6
+            = image_tag 'bret.gif', class: 'img-full', alt: 'Bret Mayer'
+          .col-xs-6
+            = image_tag 'pascal.gif', class: 'img-full', alt: 'Pascal Pixel'
+.row
+  .col-md-6
+    .card
+      .card-block
+        %h5.card-title
+          -# %span.mdi-video
+          = t('.latest_video')
+        - @videos.each do |video|
+          = link_to video do
+            .embed-responsive.embed-responsive-16by9
+              %iframe{allowfullscreen: "", src: "https://www.youtube.com/embed/#{video.tag}", class: 'embed-responsive-item'}
+  .col-md-6
+    .card
+      .card-block
+        %h5.card-title
+          -# %span.mdi-cards
+          = t('.latest_article')
+        - @articles.each do |article|
+          = link_to article do
+            = image_tag article.image.url(:medium), class: 'img-fluid rounded'
+            %p= simple_format article.blurb
+.clearfix.mt-1.mb-1
+  %h4.float-xs-left.text-success
+    -# %span.mdi-dictionary
+    = t('actions.vocabulary')
+  = link_to t('actions.more') + ' ' + t('actions.vocabulary'), vocabulary_path, class: 'btn btn-success float-xs-right'
+- @vocabulary.each_slice(2) do |row|
+  .row
+    - row.each do |item|
+      .col-lg-6
+        = render partial: 'shared/card', locals: { item: item }
+.clearfix.mt-1.mb-1
+  %h4.float-xs-left.text-info
+    -# %span.mdi-duck
+    = t('actions.proverbs')
+  = link_to t('actions.more') + ' ' + t('actions.proverbs'), proverbs_path, class: 'btn btn-info float-xs-right'
+- @proverbs.each_slice(2) do |row|
+  .row
+    - row.each do |item|
+      .col-lg-6
+        = render partial: 'shared/card', locals: { item: item }
+.clearfix.mt-1.mb-1
+  %h4.float-xs-left.text-warning
+    -# %span.mdi-cat
+    = t('actions.idioms')
+  = link_to t('actions.more') + ' ' + t('actions.idioms'), idioms_path, class: 'btn btn-warning float-xs-right'
+- @idioms.each_slice(2) do |row|
+  .row
+    - row.each do |item|
+      .col-lg-6
+        = render partial: 'shared/card', locals: { item: item }
+.clearfix.mt-1.mb-1
+  %h4.float-xs-left.text-danger
+    -# %span.mdi-shuffle
+    = t('actions.ateji')
+  = link_to t('actions.more') + ' ' + t('actions.ateji'), ateji_path, class: 'btn btn-danger float-xs-right'
+- @ateji.each_slice(2) do |row|
+  .row
+    - row.each do |item|
+      .col-lg-6
+        = render partial: 'shared/card', locals: { item: item }

@@ -1,0 +1,6 @@
+%h1= @article.title
+= image_tag @article.image.url(:large)
+%p= simple_format @article.blurb
+
+- if user_signed_in?
+  = link_to 'Edit', edit_article_path(@article), class: 'btn btn-secondary'

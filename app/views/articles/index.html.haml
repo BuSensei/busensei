@@ -1,0 +1,22 @@
+%h1
+  Blog
+%br
+- if user_signed_in?
+  = link_to 'New Article', new_article_path, class: 'btn btn-success'
+  %br
+  %br
+- @articles.each_slice(2) do |row|
+  .row
+    - row.each do |article|
+      .col-sm-6
+        = link_to article do
+          .card
+            %h5.card-header
+              = article.title
+            .card-block
+              = image_tag article.image.url(:medium), class: 'img-fluid rounded'
+              %p= simple_format article.blurb
+              - if user_signed_in?
+                %br
+                = link_to 'Edit', edit_article_path(article), class: 'btn btn-secondary'
+                = link_to 'Delete', article, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-danger'

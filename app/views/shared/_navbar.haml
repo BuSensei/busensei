@@ -1,0 +1,40 @@
+%nav.navbar.navbar-top.navbar-light.bg-faded
+  %ul.nav.nav-pills.float-md-left
+    %li.nav-item
+      = link_to root_path, class: 'nav-link text-primary' do
+        -# %span.mdi-book-open-page-variant
+        = t('.brand')
+    %li.nav-item
+      = link_to vocabulary_path, class: 'nav-link text-success' do
+        -# %span.mdi-dictionary
+        = t('actions.vocabulary')
+    %li.nav-item
+      = link_to proverbs_path, class: 'nav-link text-info' do
+        -# %span.mdi-duck
+        = t('actions.proverbs')
+    %li.nav-item
+      = link_to idioms_path, class: 'nav-link text-warning' do
+        -# %span.mdi-cat
+        = t('actions.idioms')
+    %li.nav-item
+      = link_to ateji_path, class: 'nav-link text-danger' do
+        -# %span.mdi-shuffle
+        = t('actions.ateji')
+  %ul.nav.nav-pills.float-md-right
+    %li.nav-item
+      = link_to articles_path, class: 'nav-link' do
+        -# %span.mdi-cards
+        = t('.articles')
+    %li.nav-item
+      = link_to videos_path, class: 'nav-link' do
+        -# %span.mdi-video
+        = t('.videos')
+    %li.nav-item
+      = link_to about_path, class: 'nav-link' do
+        -# %span.mdi-account
+        = t('.about')
+    %li.nav-item
+      - if I18n.locale == :en
+        = link_to '日本語', current_path_new_locale('ja'.to_sym), class: 'nav-link text-info'
+      - else
+        = link_to 'English', current_path_new_locale('en'.to_sym), class: 'nav-link text-info'

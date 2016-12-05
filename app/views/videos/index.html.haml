@@ -1,0 +1,23 @@
+%h1
+  -# %span.mdi-video
+  Videos
+%br
+- if user_signed_in?
+  = link_to 'New Video', new_video_path, class: 'btn btn-success'
+  %br
+  %br
+- @videos.each_slice(2) do |row|
+  .row
+    - row.each do |video|
+      .col-sm-6
+        = link_to video do
+          .card
+            %h5.card-header
+              = video.title
+            .card-block
+              .embed-responsive.embed-responsive-16by9
+                %iframe{allowfullscreen: "", src: "https://www.youtube.com/embed/#{video.tag}", class: 'embed-responsive-item'}
+              - if user_signed_in?
+                %br
+                = link_to 'Edit', edit_video_path(video), class: 'btn btn-secondary'
+                = link_to 'Destroy', video, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-secondary'

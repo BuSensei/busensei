@@ -1,0 +1,25 @@
+= simple_form_for @item do |f|
+  - if @item.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@item.errors.count, "error")} prohibited this item from being saved:"
+      %ul
+        - @item.errors.full_messages.each do |msg|
+          %li= msg
+  .row
+    .col-sm-6
+      = f.input :key
+      %p It is extremely important that the key is unique
+      = f.input :word
+      = f.input :reading, as: :text
+      = f.input :english, as: :text
+      = f.input :notes, as: :text
+      = f.input :synonyms
+      = f.input :opposites
+    .col-sm-6
+      = f.input :found_in
+      = f.input :japanese, as: :text
+      = f.input :origin, as: :text
+      = f.input :test
+      = f.input :level
+      = f.input :category
+      = f.button :submit

@@ -1,0 +1,27 @@
+.card.bg-primary.mb-2{class: color}
+  .card-block
+    .row
+      .col-sm-4
+        %h1.brand
+          %span.tag.tag-default kanji
+          RPG
+        %h2= t('shared.navbar.study_materials')
+        - if user_signed_in?
+          = link_to 'New Item',
+                    new_item_path,
+                    class: 'btn btn-success'
+      .col-sm-8
+        %h2
+          = title
+        %p= intro
+= paginate items, theme: 'twitter-bootstrap-4'
+.row#masonry
+  - items.each_slice(4) do |four|
+    .clearfix
+    - four.each_slice(2) do |two|
+      .clearfix.hidden-xl-up
+      - two.each do |item|
+        .col-xl-3.col-sm-6
+          = render partial: 'shared/card',
+                   locals: { item: item }
+= paginate items, theme: 'twitter-bootstrap-4'

@@ -1,0 +1,53 @@
+= render partial: 'shared/snippet',
+         locals: { item: item }
+.card#kanji
+  .card-block
+    .row
+      .col-xs-6
+        - if item.category
+          %p
+            - if item.category    == 'Vocab'
+              %span.text-success
+                -# %span.mdi-dictionary
+                Vocabulary
+            - elsif item.category == 'kotowaza'
+              %span.text-info
+                -# %span.mdi-duck
+                Proverb
+            - elsif item.category == 'yjjg'
+              %span.text-warning
+                -# %span.mdi-cat
+                Idiom
+            - elsif item.category == 'ateji'
+              %span.text-danger
+                -# %span.mdi-shuffle
+                Ateji
+            - else
+              %span.text-primary
+                -# %span.mdi-database
+                Other
+        - if item.reading
+          %p
+            = item.reading.gsub(':', '<br>').gsub(';', '<br>').gsub('②', '<br>②').gsub('①', '<br>①').html_safe
+        - if item.english
+          %p
+            = item.english.gsub(':', '<br>').gsub(';', '<br>').gsub('②', '<br>②').gsub('①', '<br>①').html_safe
+      .col-xs-6
+        = link_to item do
+          - if item.word
+            %h1.vertical-rl.float-xs-right
+              - if item.word.length == 4 || item.word.length > 8
+                - count = item.word.length / 2
+                %span><= item.word[0..(count - 1)]
+                %br
+                %span><= item.word[count..item.word.length]
+              - else
+                .max-height
+                  %span><= item.word.gsub(', ', '<br>').gsub('、', '<br>').html_safe
+    - if user_signed_in?
+      = link_to 'Edit',
+                edit_item_path(item)
+      = link_to 'Destroy',
+                item,
+                method: :delete,
+                data: { confirm: 'Are you sure?' }

@@ -1,0 +1,5 @@
+%h1= @video.title
+.embed-responsive.embed-responsive-16by9
+  %iframe{allowfullscreen: "", src: "https://www.youtube.com/embed/#{@video.tag}", class: 'embed-responsive-item'}
+- if user_signed_in?
+  = link_to 'Edit', edit_video_path(@video)

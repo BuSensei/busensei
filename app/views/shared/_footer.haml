@@ -1,0 +1,14 @@
+%footer
+  .container-fluid.m-t-3.m-b-1
+    .float-sm-left
+      Copyright
+      - if user_signed_in?
+        = link_to '©', destroy_user_session_path, method: :delete
+      - else
+        = link_to '©', new_user_session_path
+      2016 kanjiRPG
+    .float-sm-right
+      Database by
+      %span.text-danger{href: 'http://kanjirpg.com/'} BuSensei,
+      Design and Development by
+      %a.text-info{href: 'http://superpencil.com/'} Superpencil

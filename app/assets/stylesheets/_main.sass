@@ -1,0 +1,175 @@
+html,
+body
+  height: 100%
+  font-smooth: never
+  -webkit-font-smoothing: none
+
+body
+  // background: asset_url('kanjirpg.png'), $gray-lighter
+  background: $gray-lighter
+  background-repeat: no-repeat
+  font-weight: 200
+  background-blend-mode: soft-light
+  background-position: -10rem -5rem
+  // padding-top: 3.5rem
+
+small
+  font-size: 1rem
+
+.mdi
+  font-size: 1.2em
+  line-height: 1em
+  font-smooth: auto
+  -webkit-font-smoothing: subpixel-antialiased
+
+.img-full
+  width: 100%
+  height: auto
+  image-rendering: pixelated
+  opacity: 0.7
+
+.navbar-brand
+  font-weight: 400
+  img
+    height: 1em
+    display: inline-block
+    margin-top: -.3em
+
+.navbar-fixed-top.bg-faded
+  background: transparentize($gray-lightest, 0.2)
+
+.navbar-light .navbar-brand
+  color: rgba(255, 255, 255, .8)
+  &:hover
+    color: white
+
+// Sticky footer
+.wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -2.5rem
+  // padding-top: 2rem
+
+.footer,
+.push
+  height: 2.5rem
+
+#flash
+  position: fixed
+  top: 1rem
+  left: 1rem
+  right: 1rem
+  z-index: 9999
+
+.delay
+  transition-delay: 1s
+
+::selection
+  background: $brand-primary
+  color: $gray-dark
+
+[type="checkbox"],
+[type="radio"]
+  margin-right: .5em
+
+.mdi:before,
+.mdi-set
+  font-size: 1em
+
+img
+  max-width: 100%
+
+.breadcrumb
+  margin-bottom: 0rem
+
+a:hover .card
+  color: $gray-dark
+
+.card#kanji
+  margin-bottom: ($spacer * 2)
+  .col-xs-6
+    overflow: hidden
+  .card-block
+    padding-bottom: .6rem
+
+.card.bg-primary,
+.card.bg-info,
+.card.bg-success,
+.card.bg-warning,
+.card.bg-danger,
+.btn-primary,
+.btn-info,
+.btn-success,
+.btn-warning,
+.btn-danger
+  color: rgba(0,0,0,0.7)
+
+.vertical-rl
+  writing-mode: vertical-rl
+  letter-spacing: .25em
+  margin-bottom: 0
+
+.max-height
+  max-height: 16.5rem
+
+// .pagination
+//   width: 100%
+//   text-align: justify
+
+// #masonry
+//   display: -ms-flexbox
+//   -ms-flex-direction: column
+//   -ms-flex-wrap: wrap
+//   display: flex
+//   flex-direction: column
+//   flex-wrap: wrap
+//   height: 100%
+
+.portrait
+  background: $gray-dark
+
+.tag
+  margin-top: 0.2em
+
+h1.brand
+  .tag-default
+    background: rgba(0,0,0,0.7)
+    margin: 0
+    margin-right: -0.35em
+    padding: 0em 0.15em 0.1em 0.15em
+.bg-primary
+  h1.brand
+    .tag-default
+      color: $brand-primary
+.bg-success
+  h1.brand
+    .tag-default
+      color: $brand-success
+.bg-info
+  h1.brand
+    .tag-default
+      color: $brand-info
+.bg-warning
+  h1.brand
+    .tag-default
+      color: $brand-warning
+.bg-danger
+  h1.brand
+    .tag-default
+      color: $brand-danger
+
+.superpencil
+  font-size: 80%
+  background-color: #FCE400
+  margin: 0
+  color: #774701
+  font-family: "Avenir Next", "Avenir", "Helvetica", "Arial", sans-serif
+  font-weight: bold
+  font-smooth: auto
+  -webkit-font-smoothing: subpixel-antialiased
+
+  img
+    width: 17px
+    margin-right: -2px
+    margin-top: -1px

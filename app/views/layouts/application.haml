@@ -39,7 +39,7 @@
       = render partial: 'shared/navbar'
       = render partial: 'shared/flash'
       .alert.alert-danger
-        - if I18n.locale == 'ja'
+        - if I18n.locale == :ja
           %b お知らせ!
           サイトを移動しました→
         - else

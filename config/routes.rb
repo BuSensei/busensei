@@ -23,7 +23,7 @@ Rails.application.routes.draw do
     root to: 'welcomes#index'
 
     # All other routes are an error, they go home
-    get '*path', to: 'welcomes#index'
+    get '*path', to: redirect("http://kanjirpg.com/en", status: 302)
   end
 
   # Redirect to language

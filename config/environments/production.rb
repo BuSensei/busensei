@@ -56,12 +56,12 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "kanjirpg_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "busensei_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Host
   config.action_mailer.default_url_options = {
-    :host => 'kanjirpgsite.herokuapp.com'
+    :host => 'busenseisite.herokuapp.com'
   }
 
   # Get S3 config from Heroku vars

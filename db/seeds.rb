@@ -1,7 +1,7 @@
 # Users
 [
   {
-    email: 'kanjirpg@gmail.com',
+    email: 'busensei@gmail.com',
     password: 'password',
     password_confirmation: 'password'
   }

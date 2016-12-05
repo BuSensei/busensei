@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
   private
   def remove_www_subdomain
     if /^www/.match(request.host)
-      redirect_to("#{request.protocol}kanjirpg.com#{request.fullpath}", :status => 301)
+      redirect_to("#{request.protocol}busensei.com#{request.fullpath}", :status => 301)
     end
   end
 

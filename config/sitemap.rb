@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://kanjirpg.com"
+SitemapGenerator::Sitemap.default_host = "http://busensei.com"
 
 SitemapGenerator::Sitemap.create do
   I18n.available_locales.each do |locale|

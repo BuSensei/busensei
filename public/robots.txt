@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://kanjirpg.com/sitemap.xml.gz
+Sitemap: http://busensei.com/sitemap.xml.gz

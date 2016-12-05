@@ -1,9 +1,9 @@
 en:
   seo:
-    brand: kanjiRPG
+    brand: BuSensei
     description: Study materials for level 1 of the Japan Kanji Aptitude Test (Kanji Kentei) and searchable database of Japanese proverbs and idioms.
     author: Bret Mayer, Pascal Pixel
-    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, kanjiRPG, ぶ先生, ぶせんせい, 漢字検定, 漢検, 1級, ブレット, メイヤー, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
+    keywords: kanji, kentei, japanese, study material, study, vocabulary, proverbs, idioms, ateji, BuSensei, ぶ先生, ぶせんせい, 漢字検定, 漢検, 1級, ブレット, メイヤー, のぎへんに矢, ごんべんに羽, 草冠 右 心, のぎへんに谷, 土へんに谷, きのうのふちはきょうのせ, 昨日の淵は今日の瀬, 草冠 予, 草冠に朱, 草冠 のぎへん 亀, 草冠に署, 糸へんに戒, 草冠 魚 りっとう, 草冠 さんずい 亡, ごんべんに核
   actions:
     more: More
     search: Search
@@ -17,7 +17,7 @@ en:
     all_items: All items
   shared:
     navbar:
-      brand: kanjiRPG
+      brand: BuSensei
       test: Test
       study_materials: Study Materials
       articles: Blog

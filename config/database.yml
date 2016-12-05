@@ -5,7 +5,7 @@ default: &default
 
 development:
   <<: *default
-  database: kanjirpg_dev
+  database: busensei_dev
 
 test:
   <<: *default

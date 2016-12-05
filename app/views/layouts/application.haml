@@ -38,6 +38,14 @@
     .wrapper
       = render partial: 'shared/navbar'
       = render partial: 'shared/flash'
+      .alert.alert-danger
+        - if I18n.locale == 'ja'
+          %b Attention!
+          My database and learning materials have moved to a new site:
+        - else
+          %b Attention!
+          My database and learning materials have moved to a new site:
+        %a{href: "http://kanjirpg.com", alt: 'kanjiRPG'} kanjiRPG
       %br
       .container-fluid
         = yield

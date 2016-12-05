@@ -59,7 +59,7 @@ class ItemsController < ApplicationController
     def set_item
       @item = Item.find_by(slug: params[:id])
       @item = Item.find(params[:id]) if !@item
-      redirect_to action: action_name, id: @item.slug, status: 301 unless @item.slug == params[:id]
+      redirect_to "http://kanjirpg.com/en/items/#{@item.slug}"
     end
     def item_params
       params.require(:item).permit(:word, :reading, :english, :notes, :synonyms, :opposites, :found_in, :japanese, :origin, :test, :level, :category, :slug)

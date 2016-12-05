@@ -1,66 +1,259 @@
 .row
+  .col-sm-3
+    = image_tag 'bret_tv.jpg', class: 'rounded'
+  .col-sm-9
+    %ul.list-unstyled
+      %li
+        %b= t('.name.title')
+        &nbsp;
+        = t('.name.body')
+      %li
+        %b= t('.nicknames.title')
+        &nbsp;
+        = t('.nicknames.body')
+      %li
+        %b= t('.age.title')
+        &nbsp;
+        = t('.age.body')
+      %li
+        %b= t('.nationality.title')
+        &nbsp;
+        = t('.nationality.body')
+      %li
+        %b= t('.hobbies.title')
+        &nbsp;
+        = t('.hobbies.body')
+    %ul.list-unstyled
+      %li
+        %span.mdi.mdi-twitter
+        Twitter
+        %span.tag.tag-default @BuSensei
+      %li
+        %span.mdi.mdi-facebook
+        Facebook
+        %span.tag.tag-default /Bret Mayer
+      %li
+        %span.mdi.mdi-message
+        LINE
+        %span.tag.tag-default busensei
+      %li
+        %span.mdi.mdi-email
+        Email
+        %span.tag.tag-default busensei(at)gmail(dot)com
+%br
+%h2.text-xs-center Achievements & Certifications
+-# = image_tag 'certs.jpg', class: 'rounded'
+.row
+  .col-sm-8
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Certified Kanji Instructor (漢字教育士) (Japan Kanji Aptitude Testing Foundation, Ritsumeikan University)
+            %p 日本漢字能力検定協会及び立命館大学認定漢字教育士
+  .col-sm-4
+    .card.card-inverse.bg-info
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Shirakawa Shizuka Award for Excellence in Kanji Education
+            %p 第4回白川静漢字教育賞（優秀賞）
+
+.row
+  .col-sm-4
+    .card.card-inverse.bg-success
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 1
+            %p 日本漢字能力検定一級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level pre-1
+            %p 日本漢字能力検定準一級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 2
+            %p 日本漢字能力検定２級
+.row
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level pre-2
+            %p 日本漢字能力検定準２級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 3
+            %p 日本漢字能力検定３級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 4
+            %p 日本漢字能力検定４級
+.row
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 5
+            %p 日本漢字能力検定５級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 6
+            %p 日本漢字能力検定６級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 7
+            %p 日本漢字能力検定７級
+            %td
+              %span.tag.tag-success 満点！
+              %br
+              %span.tag.tag-success Perfect score!
+.row
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 8
+            %p 日本漢字能力検定８級
+            %td
+              %span.tag.tag-success 満点！
+              %br
+              %span.tag.tag-success Perfect score!
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 9
+            %p 日本漢字能力検定９級
+            %td
+              %span.tag.tag-success 満点！
+              %span.tag.tag-success Perfect score!
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Kanji Aptitude Test Level 10
+            %p 日本漢字能力検定１０級
+            %td
+              %span.tag.tag-success 満点！
+              %span.tag.tag-success Perfect score!
+.row
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japan Proverb Test Level 2
+            %p 諺能力検定２級
+  .col-sm-4
+    .card
+      .card-block
+        .row
+          .col-xs-2
+            %h2.mdi.mdi-certificate
+          .col-xs-10
+            %p Japanese-Language Proficiency Test Level N1
+            %p 日本語能力試験レベルN1
+
+%br
+.row
+.col-sm-3
+.col-sm-9
+%h2 In the Media 漢字RPG
+.row
   .col-md-4
-    .card
-      .card-block
-        %h1 ぶ先生
-        %h5= simple_format t('.header')
-        %p= simple_format t('.sub_header')
-    .card
-      .card-block
-        %h5.card-title
-          %span.mdi.mdi-video
-          = t('.latest_video')
-        - @videos.each do |video|
-          = link_to video do
-            .embed-responsive.embed-responsive-16by9
-              %iframe{allowfullscreen: "", src: "https://www.youtube.com/embed/#{video.tag}", class: 'embed-responsive-item'}
-    .card
-      .card-block
-        %h5.card-title
-          %span.mdi.mdi-cards
-          = t('.latest_article')
-        - @articles.each do |article|
-          = link_to article do
-            = image_tag article.image.url(:medium), class: 'img-fluid rounded'
-            %p= simple_format article.blurb
-  .col-md-8
-    .clearfix.mt-1.mb-1
-      %h4.float-xs-left
-        %span.mdi.mdi-dictionary
-        = t('actions.vocabulary')
-      = link_to t('actions.more') + ' ' + t('actions.vocabulary'), vocabulary_path, class: 'btn btn-secondary float-xs-right'
-    - @vocabulary.each_slice(2) do |row|
-      .row
-        - row.each do |item|
-          .col-lg-6
-            = render partial: 'shared/card', locals: { item: item }
-    .clearfix.mt-1.mb-1
-      %h4.float-xs-left
-        %span.mdi.mdi-duck
-        = t('actions.proverbs')
-      = link_to t('actions.more') + ' ' + t('actions.proverbs'), proverbs_path, class: 'btn btn-secondary float-xs-right'
-    - @proverbs.each_slice(2) do |row|
-      .row
-        - row.each do |item|
-          .col-lg-6
-            = render partial: 'shared/card', locals: { item: item }
-    .clearfix.mt-1.mb-1
-      %h4.float-xs-left
-        %span.mdi.mdi-cat
-        = t('actions.idioms')
-      = link_to t('actions.more') + ' ' + t('actions.idioms'), idioms_path, class: 'btn btn-secondary float-xs-right'
-    - @idioms.each_slice(2) do |row|
-      .row
-        - row.each do |item|
-          .col-lg-6
-            = render partial: 'shared/card', locals: { item: item }
-    .clearfix.mt-1.mb-1
-      %h4.float-xs-left
-        %span.mdi.mdi-shuffle
-        = t('actions.ateji')
-      = link_to t('actions.more') + ' ' + t('actions.ateji'), ateji_path, class: 'btn btn-secondary float-xs-right'
-    - @ateji.each_slice(2) do |row|
-      .row
-        - row.each do |item|
-          .col-lg-6
-            = render partial: 'shared/card', locals: { item: item }
+    %h5 Media Appearances
+    %ul.list-group
+      %li.list-group-item 日本テレビ『１億人の大質問⁉笑ってコラえて！』
+      %li.list-group-item BS JAPAN『ワタシが日本に住む理由』
+      %li.list-group-item NHK WORLD
+      %li.list-group-item 静岡朝日テレビ『とびっきり！静岡』
+      %li.list-group-item テレビ東京『L4YOUプラス』
+      %li.list-group-item ＴＯＫＹＯ　ＭＸ『東京号泣教室』
+      %li.list-group-item 大阪ほんわかテレビ
+      %li.list-group-item ＴＢＳテレビ『アメージパング』
+      %li.list-group-item 静岡だいいちテレビ『〇ごとワイド』
+      %li.list-group-item テレビ静岡『てっぺん静岡』
+      %li.list-group-item テレビ静岡『スーパーニュース』
+      %li.list-group-item NHK静岡『たっぷり静岡』
+      %li.list-group-item K-MIX静岡ＦＭ『モーニングラジラ』
+  .col-md-4
+    %h5 Publications
+    %ul.list-group
+      %li.list-group-item Cool Japan and the World: Reading Newspapers Today - 英字紙で読む日本と世界
+      %li.list-group-item Highlighting Japan
+      %li.list-group-item The Japan News
+      %li.list-group-item Tra-maga Fellow Academy - トラマガ記事フェローアカデミー
+      %li.list-group-item womo静岡
+      %li.list-group-item womo浜松
+      %li.list-group-item 漢検生涯学習ネットワーク会員通信
+      %li.list-group-item 静岡新聞
+      %li.list-group-item 趣味の文具箱
+      %li.list-group-item 中日新聞
+      %li.list-group-item 日経新聞
+      %li.list-group-item 浜松経済新聞
+      %li.list-group-item 読売新聞
+  .col-md-4
+    %h5 Affiliated Groups
+    %ul.list-group
+      %li.list-group-item Gettysburg College
+      %li.list-group-item IM JAPAN - アイム・ジャパン
+      %li.list-group-item 漢字を語る会『楷の木』
+      %li.list-group-item 漢検生涯学習ネットワーク
+      %li.list-group-item 日本漢字能力検定協会
+      %li.list-group-item 立命館大学
+      %li.list-group-item Z-KAI

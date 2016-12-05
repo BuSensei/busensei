@@ -13,11 +13,11 @@ Rails.application.routes.draw do
     resources :videos, only: [:index, :show]
     resources :articles, only: [:index, :show]
     resources :items, only: [:index, :show]
-    get :vocabulary, to: 'items#vocabulary'
-    get :proverbs, to: 'items#proverbs'
-    get :idioms, to: 'items#idioms'
-    get :ateji, to: 'items#ateji'
-    get :about, to: 'welcomes#about'
+    get :vocabulary, to: redirect("http://kanjirpg.com/en/vocabulary", status: 302)
+    get :proverbs, to: redirect("http://kanjirpg.com/en/proverbs", status: 302)
+    get :idioms, to: redirect("http://kanjirpg.com/en/idioms", status: 302)
+    get :ateji, to: redirect("http://kanjirpg.com/en/ateji", status: 302)
+    get :about, to: redirect("http://kanjirpg.com/en/about", status: 302)
 
     # Main page
     root to: 'welcomes#index'

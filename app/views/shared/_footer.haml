@@ -1,12 +1,8 @@
-%footer
+%footer.text-xs-center
   .container-fluid.m-t-3.m-b-1
-    .float-sm-left
-      Copyright
-      - if user_signed_in?
-        = link_to '©', destroy_user_session_path, method: :delete
-      - else
-        = link_to '©', new_user_session_path
-      2016 Bret Mayer
-    .float-sm-right
-      Design and Development by
-      %span.text-info Superpencil
+    Copyright
+    - if user_signed_in?
+      = link_to '©', destroy_user_session_path, method: :delete
+    - else
+      = link_to '©', new_user_session_path
+    2016 Bret Mayer

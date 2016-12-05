@@ -1,9 +1,9 @@
-class AddImageToIllustrations < ActiveRecord::Migration[5.0]
+class AddImageToComics < ActiveRecord::Migration[5.0]
   def self.up
-    add_attachment :illustrations, :image
+    add_attachment :comics, :image
   end
 
   def self.down
-    remove_attachment :illustrations, :image
+    remove_attachment :comics, :image
   end
 end

@@ -6,7 +6,7 @@
   = link_to 'New Article', new_article_path, class: 'btn btn-success'
   %br
   %br
-- @articles.each_slice(3) do |row|
+- @articles.each_slice(4) do |row|
   .row
     - row.each do |article|
       .col-sm-4

@@ -6,10 +6,10 @@
   = link_to 'New Video', new_video_path, class: 'btn btn-success'
   %br
   %br
-- @videos.each_slice(2) do |row|
+- @videos.each_slice(3) do |row|
   .row
     - row.each do |video|
-      .col-sm-6
+      .col-sm-4
         = link_to video do
           .card
             %h5.card-header

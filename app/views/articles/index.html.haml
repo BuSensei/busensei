@@ -6,16 +6,16 @@
   = link_to 'New Article', new_article_path, class: 'btn btn-success'
   %br
   %br
-- @articles.each_slice(4) do |row|
+- @articles.each_slice(5) do |row|
   .row
     - row.each do |article|
-      .col-sm-3
+      .col-sm-2
         = link_to article do
           .card
-            %h5.card-header
+            .card-header
               = article.title
             .card-block
-              = image_tag article.image.url(:medium), class: 'img-fluid rounded'
+              = image_tag article.image.url(:small), class: 'img-fluid rounded'
               - if user_signed_in?
                 %br
                 = link_to 'Edit', edit_article_path(article), class: 'btn btn-secondary'

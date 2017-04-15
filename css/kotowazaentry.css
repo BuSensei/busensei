@@ -1,0 +1,191 @@
+body {
+  background-image: url('../img/washi.jpg');
+}
+
+.page-box {
+  width: 90%;
+  margin: auto;
+  align-content: center;
+}
+
+/**********************
+KANJI IMAGE
+**********************/
+
+.kanji {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  align-content: center;
+}
+
+.kanji img {
+  width: 300px;
+  margin: auto;
+}
+
+/**********************
+READINGS AND INFO
+**********************/
+
+.kanji-info-box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readings {
+  width: 100%;
+  margin: 0, auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.english {
+  width: 100%;
+  margin: 0, auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-bottom: 1px dotted;
+}
+
+.vocab {
+  width: 100%;
+}
+
+#phrase {
+  color: #000;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.jp-type {
+  color: tomato;
+  font-size: 1em;
+  text-shadow: none;
+}
+
+.en-type {
+  color: blue;
+  text-shadow: none;
+}
+
+#vocab-table .vocab-type {
+  color: #000;
+  font-size: 1.5em;
+}
+
+#vocab-table .jp-type {
+  font-size: .7em;
+}
+
+#vocab-table .en-type {
+  font-size: 1em;
+}
+
+/**********************
+ILLUSTRATION
+**********************/
+
+.illust {
+  margin: auto;
+  width: 90%;
+}
+
+.illust-pic {
+  margin: 0;
+  position: relative;
+}
+
+.illust-pic [alt="1"] {
+  max-height: 100%;
+  margin: auto;
+  /*align-self: flex-end;*/
+}
+
+.illust-pic [alt="2"] {
+  height: 60%;
+  margin: auto;
+  position: absolute;
+  top: 7%;
+  right: 4%;
+
+}
+
+/**********************
+ILLUSTRATION ANIMATION
+**********************/
+
+.illust:hover [alt="2"] {
+  transform: rotate(-5deg) scale(1.1,1.1);
+  transition-duration: 1.5s;
+
+}
+
+@keyframes swing {
+   20% { transform: rotate(15deg); }
+   40% { transform: rotate(-10deg); }
+   60% { transform: rotate(5deg); }
+   80% { transform: rotate(-5deg); }
+   100% { transform: rotate(0deg); }
+}
+
+/**********************
+MEDIA QUERIES
+**********************/
+
+@media screen and (min-width: 9999px) {
+
+  /**** KANJI-INFO-BOX ****/
+
+  .kanji-info-box {
+    flex-direction: row;
+  }
+
+  .kanji {
+    width: 50%;
+    float:left;
+  }
+
+  .info {
+    width: 50%;
+    float:right;
+  }
+
+  .readings {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #vocab-table .vocab-type {
+    color: #000;
+    font-size: 2em;
+  }
+
+  #vocab-table .jp-type {
+    font-size: 1em;
+  }
+
+  #vocab-table .en-type {
+    font-size: 1.5em;
+  }
+
+  /**** ILLUST-OLD-BOX ****/
+
+
+} /*MEDIA QUERY*/

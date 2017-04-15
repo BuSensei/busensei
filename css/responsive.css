@@ -1,0 +1,93 @@
+@media screen and (min-width: 480px) {
+  
+  /*********
+  2-COLUMN LAYOUT
+  *********/
+  
+  #primary {
+    width: 45%;
+    float: left;
+    margin: 0 1.25%;
+    background-image: url('../img/washi.jpg');
+  }  
+  
+  #secondary {
+    width: 45%;
+    float: right;
+    margin: 0 1.25%;
+    background-image: url('../img/washi.jpg');
+  } 
+  
+  #photocol {
+    width: 40%;
+    float: left;
+    margin: 0 1.25%;
+  }
+  
+  #infocol {
+    width: 50%;
+    float: right;
+    margin 0 1.25%;
+    background-image: url('../img/washi.jpg');
+  }
+  
+  /*********
+  PAGE: PORTFOLIO
+  *********/
+  
+  #gallery li {
+    width: 28.3333%;
+    background-image: url('../img/washi.jpg');
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+  
+  /*********
+  PAGE: ABOUT
+  *********/
+  
+  .profile-photo {
+    float: right;
+    margin: 0 5% 5px 0;
+  }
+
+}
+
+@media screen and (min-width: 660px) {
+  
+  /*********
+  HEADER
+  *********/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+}

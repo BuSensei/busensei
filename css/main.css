@@ -1,0 +1,408 @@
+/*******
+ELEMENTS
+*******/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: 1em/1.5 'Open Sans', sans-serif;
+	color: #373737;
+	background: #eaeaea;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+
+}
+
+h3 {
+	font-size: 1.3em;
+	line-height: 1.25em;
+	margin-top: 0em;
+	margin-bottom: .5em;
+}
+p {
+	font-size: .875em;
+	line-height: 1.4;
+	margin: 0 0 1.5em;
+}
+
+/*********
+HEADING
+*********/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 1.3em;
+  font-weight: 800;
+  line-height: 0.8em;
+}
+
+h2 {
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+/*********
+NAVIGATION
+*********/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+/*******
+ALL-ENTRIES
+*******/
+
+.main-header {
+	text-align: center;
+	padding: 2.8em 0;
+}
+
+.all-entries {
+	display: flex;
+	width: 100%;
+	margin: auto;
+}
+
+.all-entries:nth-child(2n+1) {
+	clear: left;
+}
+
+/*******
+ENTRIES
+*******/
+
+.entry {
+	position: relative;
+	line-height: 0;
+	overflow: hidden;
+	margin: 1%;
+}
+
+.entry img {
+
+}
+
+/*******
+KANJI OVERLAY
+******/
+
+.kanji-fp {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .65);
+  font-size: 2em;
+}
+
+.kanji-fp p {
+  margin-top: -15px;
+  font-size: 1.5rem;
+}
+
+.kanji-fp {
+	opacity: 0;
+	transition: .5s;
+}
+.kanji-fp:hover {
+	opacity: 1;
+}
+
+
+/*********
+GENERAL
+*********/
+
+
+body {
+  background-image: url('../img/washi.jpg');
+  font-family: 'Acme', sans-serif;
+  /* background-repeat: no-repeat;
+  background-size: 800px 850px;
+  background-position: center; */
+}
+
+#wrapper {
+  background-image: url('/img/washi.jpg');
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+
+}
+
+#contacts {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#washi {
+  background-image: url('../img/washi.jpg');
+}
+
+a {
+  text-decoration:none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+/*********
+FOOTER
+*********/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/*********
+PAGE: PORTFOLIO
+*********/
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*********
+PAGE: ABOUT
+*********/
+
+.profile-photo {
+  float: right;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 5px;
+  border-radius: 75%;
+}
+
+
+
+/*********
+PAGE: CONTACT
+*********/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+#primary p {
+  text-align: center;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.mail a {
+  background-image: url('../img/mail.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.twitter a {
+  background-image: url('../img/twitter.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.facebook a {
+  background-image: url('../img/facebook.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*********
+COLORS
+*********/
+
+/* site body */
+body {
+  background-image: url('../img/washi.jpg');
+  background-color: #fff;
+  color: #000;
+}
+
+/* green header */
+header {
+  background-image: url('../img/washi-pattern-03.jpg');
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+#logo h1, h2 {
+  color: #fff;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+/*******
+MEDIA QUERIES
+******/
+
+/* NAVIGATION */
+
+@media screen and (min-width: 660px) {
+  nav {
+
+  }
+}
+
+/* ENTRY DISPLAY */
+
+/*@media (min-width: 0) and (max-width: 768px) {
+  .entry {
+		width: 30%;
+		float: left;
+		margin-left: 4%;
+	}
+}
+
+@media (min-width: 769px) {
+	.entry:nth-child(4n+1) {
+		width: 20%;
+		float: left;
+		margin-left: 4%;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.entry:nth-child(4n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}
+
+@media (min-width: 1025px) {
+	.entry {
+		width: 30.63973064%;
+	}
+	.entry:nth-child(3n+1) {
+		margin-left: 0;
+		clear: left;
+	}
+}*/

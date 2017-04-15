@@ -1,0 +1,266 @@
+/*********
+GENERAL
+*********/
+
+body {
+  font-family: 'Acme', sans-serif;
+  background-image: url('../img/washi.jpg');
+  /* background-repeat: no-repeat;
+  background-size: 800px 850px;
+  background-position: center; */
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+  
+}
+
+#contacts {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#washi {
+  background-image: url('../img/washi.jpg');
+}
+
+a {
+  text-decoration:none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+
+/*********
+HEADING
+*********/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 1.3em;
+  font-weight: 800;
+  line-height: 0.8em;
+}
+
+h2 {
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+/*********
+NAVIGATION
+*********/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 1px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+
+/*********
+FOOTER
+*********/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+/*********
+PAGE: PORTFOLIO
+*********/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #000; 
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  color: #000;
+}
+
+
+
+/*********
+PAGE: ABOUT
+*********/
+
+.profile-photo {
+  float: right;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 5px;
+  border-radius: 75%;
+}
+
+
+
+/*********
+PAGE: CONTACT
+*********/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+#primary p {
+  text-align: center;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.mail a {
+  background-image: url('../img/mail.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.twitter a {
+  background-image: url('../img/twitter.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.facebook a {
+  background-image: url('../img/facebook.png');
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*********
+COLORS
+*********/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* green header */
+header {
+  background-image: url('../img/washi-pattern-03.jpg');
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+#logo h1, h2 {
+  color: #fff;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+/* links */
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+  text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}

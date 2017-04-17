@@ -50,7 +50,7 @@ header {
 
 #logo {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
@@ -105,9 +105,10 @@ ALL-ENTRIES
 	display: flex;
 	width: 100%;
 	margin: auto;
+  flex-wrap: wrap;
 }
 
-.all-entries:nth-child(2n+1) {
+.all-entries div:nth-child(2n+1) {
 	clear: left;
 }
 
@@ -145,6 +146,7 @@ KANJI OVERLAY
 	align-items: center;
 	background: rgba(0,0,0, .65);
   font-size: 2em;
+
 }
 
 .kanji-fp p {
@@ -167,7 +169,6 @@ GENERAL
 
 
 body {
-  background-image: url('../img/washi.jpg');
   font-family: 'Acme', sans-serif;
   /* background-repeat: no-repeat;
   background-size: 800px 850px;

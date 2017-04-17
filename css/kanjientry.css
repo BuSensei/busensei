@@ -133,12 +133,12 @@ ILLUSTRATION
 .illust-pic {
   /*max-height: 100%;*/
   display: flex;
-  max-width: 60%;
+  max-width: 75%;
   /*margin: auto;*/
 }
 
 .illust-pic [alt="reg"] {
-  margin-left: 30%;
+  margin-left: 15%;
   align-self: flex-end;
 }
 

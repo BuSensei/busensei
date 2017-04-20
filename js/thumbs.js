@@ -20,7 +20,9 @@ createThumbs = function(thumbs) {
       thumbContent += '<div class="kanji-fp">';
       thumbContent += '<h1>' + thumbs[i][1] + '</h1>'
       
-      thumbContent += '<p><a href="kanji/' + thumbs[i][0] + '.html">';
+      thumbContent += '<p><a ';
+      thumbContent += 'id="' + thumbs[i][0] + '"';
+      thumbContent += 'href="kanji/' + thumbs[i][0] + '.html">';
       thumbContent += thumbs[i][0];
       thumbContent += '</a></p></div></div>';    
 

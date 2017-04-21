@@ -9,6 +9,20 @@ body {
 }
 
 /**********************
+PAGE-BOX
+**********************/
+
+.page-box {
+  background-image: url('../img/washi.jpg');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+}
+
+/**********************
 KANJI IMAGE
 **********************/
 
@@ -24,11 +38,6 @@ KANJI IMAGE
   font-size: 30vw;
   text-align: center;
   display: relative;
-}
-
-.kanji img {
-  width: 300px;
-  margin: auto;
 }
 
 .kyuujitai {
@@ -289,6 +298,7 @@ MEDIA QUERIES
     font-size: 1em;
   }
 
+  
   .illust {
     width: 40%;
     float: left;

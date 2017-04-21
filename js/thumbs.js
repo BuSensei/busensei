@@ -13,7 +13,7 @@ createThumbs = function(thumbs) {
   
   for (var i=0; i<thumbs.length; i++) {
 
-      var thumbContent = '<div class="entry">';
+      var thumbContent = '<div onclick="" class="entry">';
       thumbContent += '<img src="img/thumb/';
       thumbContent += thumbs[i][0] + 'thumb.png">';
       

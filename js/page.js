@@ -22,3 +22,25 @@ insertHTML = function(id, text) {
 
 
 createHeader(headerContent);
+
+//PAGE BODY
+
+var $allEntries = $('<div class="all-entries" id="all-entries"></div>');
+
+$("body").append($allEntries);
+
+//FOOTER CONTENT
+
+var footerContent = '<a href="http://twitter.com/busensei">';
+footerContent += '<img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">';
+footerContent += '</a>';
+footerContent += '<a href="http://facebook.com/bretmayer">';
+footerContent += '<img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">';
+footerContent += '</a>';
+footerContent += '<p>&copy; 2017 Bret Mayer.</p>';
+
+createFooter = function(footerContent) {
+  insertHTML("footer", footerContent);
+};
+
+// createFooter(footerContent);

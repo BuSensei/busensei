@@ -4,10 +4,11 @@ var thumbs = [
   ["old", "老"],
   ["travel", "旅"],
   ["prefecture", "県"],
+  ["spicy", "辛"],
+  ["on hand", "携"],
   ["heavy", "重"],
   ["hatch", "孵"],
   ["together", "共"],
-  ["on hand", "携"]
   ]; 
 
 
@@ -43,9 +44,9 @@ createThumbs = function(thumbs) {
       thumbContent += '<p><center><a ';
       thumbContent += 'id="' + thumbs[i][0] + '"';
       thumbContent += 'href="kanji/' + thumbs[i][0] + '.html">';
-      thumbContent += '《 ';
+      thumbContent += ' ';
       thumbContent += thumbs[i][0].toUpperCase();
-      thumbContent += ' 》';
+      thumbContent += ' ';
       thumbContent += '</a></center></p></div>';
       //THUMB TEXT CLOSE
 

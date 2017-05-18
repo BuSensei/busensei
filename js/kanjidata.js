@@ -164,5 +164,24 @@ var kanjiList  = {
     'word3english': '',
     'oldFormText': 'This kanji is a combination of three parts: a bird, a pedestal and a hand. The hand radical indicates action or usage. The bird on the pedestal is used in ornithomancy. Ornithomancy is the ancient practice of fortunetelling by interpreting the behavior of birds. Ancient Chinese would rely on flight paths to determine many things, including how to mobilize military units. Nowadays we can simply pull out our smartphones and check GPS, but back then, birds were a key source of information.',
     'illustText': '携 is roughly equivalent to "on hand" as in having something "on hand" (CARRY) or being "on hand" to help another (PARTICIPATE). It is the KEI in KEITAI DENWA (携帯電話) "mobile phone."' 
+  },
+
+  'spicy':{
+    'kanji': '辛',
+    'radical': '辛',
+    'strokes': '7',
+    'readings': '',
+    'english': 'SPICY, PAINFUL',
+    'word1': '',
+    'word1read': '',
+    'word1english': '',
+    'word2': '',
+    'word2read': '',
+    'word2english': '',
+    'word3': '',
+    'word3read': '',
+    'word3english': '',
+    'oldFormText': 'This kanji is modeled after a large needle used to tattoo criminals as punishment. The tattoo process can be PAINFUL even using modern technology, so it is no surprise this kanji became associated with pain.',
+    'illustText': 'However, this character also came to mean SPICY, which is likely related to the sharp pain experienced while eating spicy foods and the needle-like tingling one feels after you have finished.'
   }
 };

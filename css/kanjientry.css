@@ -16,7 +16,8 @@ PAGE-BOX
   background-image: url('../img/washi.jpg');
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top:0;
   left:0;
   display: none;

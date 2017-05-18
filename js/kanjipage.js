@@ -38,124 +38,51 @@ $pageBox.click(function(){
 
 createPage = function(key) {
 
-  $content = '<div class="kanji-info-box">';
-  $content += '<div class="kanji">';
-  $content += kanjiList[key].kanji;
-  
-  $content += '</div>';
-  //KANJI DIV END
+  $content = '<div id="kanji-info-box">';
+  //KANJI-INFO OPEN
 
-  $content += '<div class="info">';
-  $content += '<div class="readings">';
-  $content += '<h2 id="radical">'
-  $content += kanjiList[key].radical;
-  $content += '、' + kanjiList[key].strokes + '画…</h2>';
-  //RADICAL AND STROKES
+  $content += '<div id="illust-old-box">';
+  //ILLUSTRATION & OLD FORM OPEN
 
-  $content += '<h2 class="jp-type">';
-  $content += kanjiList[key].readings;
-  $content += '</h2>';
-  $content += '</div>';
-  //READINGS DIV END
-
-  $content += '<div class="english">';
-  $content += '<h2 class="en-type">';
-  $content += kanjiList[key].english;
-  $content += '</div>';
-  //ENGLISH DIV END
-
-  $content += '<div class="vocab">';
-  $content += '<table id="vocab-table">';
-  
-  $content += '<tr>';
-  $content += '<td class="vocab-type">';
-  $content += kanjiList[key].word1;
-  $content += '</td>';
-  $content += '<td class="jp-type">';
-  $content += kanjiList[key].word1read;
-  $content += '</td>';
-  $content += '<td class="en-type">';
-  $content += kanjiList[key].word1english;
-  $content += '</td></tr>';
-  // WORD 1
-
-  $content += '<tr>';
-  $content += '<td class="vocab-type">';
-  $content += kanjiList[key].word2;
-  $content += '</td>';
-  $content += '<td class="jp-type">';
-  $content += kanjiList[key].word2read;
-  $content += '</td>';
-  $content += '<td class="en-type">';
-  $content += kanjiList[key].word2english;
-  $content += '</td></tr>';
-  //WORD 2
-
-  $content += '<tr>';
-  $content += '<td class="vocab-type">';
-  $content += kanjiList[key].word3;
-  $content += '</td>';
-  $content += '<td class="jp-type">';
-  $content += kanjiList[key].word3read;
-  $content += '</td>';
-  $content += '<td class="en-type">';
-  $content += kanjiList[key].word3english;
-  $content += '</td></tr>';
-  //WORD 3
-
-  $content += '</table></div>';
-  //VOCAB TABLE END
-
-  $content += '</div>';
-  //INFO SECTION END
-
-  $content += '</div>';
-  //KANJI/INFO BOX END
-
-  $content += '<div class ="illust-old-box">';
-  $content += '<div class="illust">';
-  $content += '<div class="illust-pic">';
+  $content += '<div id="illust">';
+  //ILLUSTRATION OPEN
 
   $content += '<img src="./img/e/';
-  $content += key + '01.png" alt="reg">';
-  //ILLUSTRATION IMAGE
+  $content += key + '01.png">';
+  $content += '</div>';
+  //ILLUSTRATION CLOSE
+
+  $content += '<div id="oldforms">';
+  //OLD FORMS OPEN
+
+  $content += '<img src="./img/e/';
+  $content += key + '02.png">';
+  $content += '</div>';
+  //OLD FORMS CLOSE
 
   $content += '</div>';
-  //ILLUST-PIC DIV END
+  //ILLUSTRATION & OLD FORM CLOSE
 
-  $content += '<div class="illust-text">';
+  $content += '<div id="info">';
+  //INFO OPEN
+
+  $content += '<center>';
+  $content += '<font size="+2">【'; 
+  $content += kanjiList[key].kanji;
+  $content += '】</font> ';
+
+  $content += kanjiList[key].oldFormText;
+  $content += '</center>';
+
   $content += '<center>';
   $content += kanjiList[key].illustText;
   $content += '</center>';
 
   $content += '</div>';
-  //ILLUSTRATION TEXT DIV END
+  //INFO BOX CLOSE
 
   $content += '</div>';
-  //ILLUSTRATION BOX END
-
-  $content += '<div class="oldforms">';
-  $content += '<div class="old-front">';
- 
-  $content += '<img src="./img/e/';
-  $content += key + '02.png" alt="reg">';
-  //OLD FORM IMAGE
-
-  $content += '</div>';
-  //OLD FORM IMAGE DIV END
-
-  $content += '<center>';
-  $content += kanjiList[key].oldFormText;
-  $content += '</center>';
-  //OLD FORM EXPLANATION
-
-  $content += '</div>';
-  //OLD FORM BOX DIV END
-
-  $content += '</div>';
-  //ILLUSTRATION & OLD FORM BOX DIV END
-
-
+  //KANJI-INFO CLOSE
 
   $("body").append($pageBox);
 

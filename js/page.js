@@ -1,15 +1,14 @@
 //HEADER CONTENT
 
-var headerContent = '<a href="index.html" id="logo">';
-headerContent += '<h1>ぶ先生漢字thing</h1>';
-headerContent += '</a>';
-headerContent += '<nav><ul>';
-headerContent += '<li>';
-headerContent += '<a href="index.html" class="selected">Home</a>';
-headerContent += '</li>';
-headerContent += '<li>';
-headerContent += '<a href="about.html">About</a>';
-headerContent += '</li></ul></nav>';
+var headerContent = `
+  <nav>
+    <ul>
+      <li><a href="index.html" id="logo">BuSensei.com</a></li>
+      <li>・</li>
+      <li><a href="about.html">Contact</a></li>
+    </ul>
+  </nav>
+`
 
 createHeader = function(headerContent) {
   insertHTML("header", headerContent);  
@@ -31,16 +30,18 @@ $("body").append($allEntries);
 
 //FOOTER CONTENT
 
-var footerContent = '<a href="http://twitter.com/busensei">';
-footerContent += '<img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">';
-footerContent += '</a>';
-footerContent += '<a href="http://facebook.com/bretmayer">';
-footerContent += '<img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">';
-footerContent += '</a>';
-footerContent += '<p>&copy; 2017 Bret Mayer.</p>';
-
+var footerContent = `
+  <a href="http://twitter.com/busensei">
+  <img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon">
+  </a>
+  <a href="http://facebook.com/bretmayer">
+  <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">
+  </a>
+  <p>&copy; 2017 Bret Mayer.</p>
+  `
+  
 createFooter = function(footerContent) {
   insertHTML("footer", footerContent);
 };
 
-// createFooter(footerContent);
+createFooter(footerContent);

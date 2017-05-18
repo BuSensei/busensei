@@ -33,7 +33,7 @@ var kanjiList  = {
     'word3': '電',
     'word3read': 'いなずま',
     'word3english': 'lightning',
-    'illustText': 'Another reading for 電 outside of general usage is いなずま, which means lightning. This breaks down to いな(稲) "rick stalk" and ずま(妻) "spouse." It was thought that when a bolt touched down from the sky, it would impregnate the rice stalk, which could then bear fruit for the harvest.',
+    'illustText': 'Another reading for 電 outside of general usage is INAZUMA, which means lightning. This breaks down to INA(稲) "rice stalk" and ZUMA(妻) "spouse." It was thought that when a bolt touched down from the sky, it would impregnate the rice stalk, which could then bear fruit for the harvest.',
     'oldFormText': 'The rain 雨 radical is often used in kanji related to weather. The bottom half is a form of 申, which was designed in the shape of a lightning bolt. Lightning was thought to be a message from the gods, so 申す means "to say" and the 申 element is found in the kanji for god 神.'   
   },
 
@@ -88,7 +88,7 @@ var kanjiList  = {
     'word3': '縣さん',
     'word3read': 'あがたさん',
     'word3english': 'Mr. Agata',
-    'illustText': 'The head of a criminal would be put on display at the border as a warning for those entering. In this way, 県 came to represent the demarkation of administrative districts.',
+    'illustText': 'The head of a criminal would be put on display at the border as a warning for those entering a territory. In this way, 県 came to represent the demarkation of administrative districts.',
     'oldFormText': 'The bronze script character shows a severed head hanging from a rope. This is reflected in the old form 縣, which is the head(首) element upside-down next to thread(系). The current simplified form omits the thread portion.'
   },
   'heavy':{
@@ -106,8 +106,8 @@ var kanjiList  = {
     'word3': '貴重',
     'word3read': 'きちょう',
     'word3english': 'precious',
-    'illustText': 'This kanji depicts a person bearing a heavy sack. It can represent physical weight, emotional weight or value. The Japanese meanings of かさねる and かさなる mean to "stack, pile up or overlap" and the reading え is one instance in a stack, e.g., 紙一重(kami hito e), "paper thin" is literally one一 sheet重 of paper紙.',
-    'oldFormText': 'Above is the seal script version of 重. It is a combintation of a person and a satchel. When it came to organizing it the dictionary, it was divided as 千 + 里 and categorized under the 里 radical for sake of convenience.'
+    'illustText': 'This kanji depicts a person bearing a heavy sack. It can represent physical weight, emotional weight or value. The Japanese meanings of KASANERU/KASANARU mean to "stack, pile up or overlap" and the reading E is one instance in a stack, e.g., 紙一重(KAMI HITO E), "paper thin" is literally one一 sheet重 of paper紙.',
+    'oldFormText': 'Above is the seal script version of 重. It is a combintation of a person and a satchel. Most dictionaries divide the character into 1000(千) + village(里) and categorize under the 里 radical. Though unrelated to the original meaning of 重, ruling over 1,000 villages would be a heavy burden to bear.'
   },
   'hatch':{
     'kanji': '孵',
@@ -126,5 +126,43 @@ var kanjiList  = {
     'word3english': 'incubator',
     'illustText': '孵 falls outside the "general use" set of kanji and is commonly replaced with hiragana. For example, you may see "incubation" from the vocabulary list writtien as 「ふ化」 in newspapers and TV captions.',
     'oldFormText': 'Above is an assembled seal script form of 孵. The left is egg(卵), a character thought to be based on frog eggs. The right side is a combination of a hand and a child. Together, it represents outside influence on the incubation and birthing process.'
+  },
+
+  'together':{
+    'kanji': '共',
+    'radical': '',
+    'strokes': '6',
+    'readings': 'とも',
+    'english': 'TOGETHER, BOTH',
+    'word1': '',
+    'word1read': '',
+    'word1english': '',
+    'word2': '',
+    'word2read': '',
+    'word2english': '',
+    'word3': '',
+    'word3read': '',
+    'word3english': '',
+    'oldFormText': 'The seal script shows two hands lifting up a large offering. This can be interpreted as using BOTH hands or working TOGETHER.',
+    'illustText': '共 is commonly used in TOMO NI (共に) "together" and FUTARI TOMO (二人共) "both of you/us", but is often written in hiragana.'
+  },
+
+  'on hand':{
+    'kanji': '携',
+    'radical': '扌',
+    'strokes': '',
+    'readings': '',
+    'english': 'ON HAND',
+    'word1': '',
+    'word1read': '',
+    'word1english': '',
+    'word2': '',
+    'word2read': '',
+    'word2english': '',
+    'word3': '',
+    'word3read': '',
+    'word3english': '',
+    'oldFormText': 'This kanji is a combination of three parts: a bird, a pedestal and a hand. The hand radical indicates action or usage. The bird on the pedestal is used in ornithomancy. Ornithomancy is the ancient practice of fortunetelling by interpreting the behavior of birds. Ancient Chinese would rely on flight paths to determine many things, including how to mobilize military units. Nowadays we can simply pull out our smartphones and check GPS, but back then, birds were a key source of information.',
+    'illustText': '携 is roughly equivalent to "on hand" as in having something "on hand" (CARRY) or being "on hand" to help another (PARTICIPATE). It is the KEI in KEITAI DENWA (携帯電話) "mobile phone."' 
   }
 };

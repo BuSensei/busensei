@@ -42,10 +42,7 @@ HEADING
 *********/
 
 header {
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
+  
 }
 
 #logo {
@@ -71,9 +68,9 @@ NAVIGATION
 *********/
 
 nav {
-  text-align: center;
+  text-align: left;
   padding: 10px 0;
-  margin: 20px 0 1px;
+  margin: 0px 0 1px;
 }
 
 nav ul {
@@ -98,7 +95,7 @@ ALL-ENTRIES
 
 .main-header {
 	text-align: center;
-	padding: 2.8em 0;
+	/*padding: 2.8em 0;*/
 }
 
 .all-entries {
@@ -123,15 +120,23 @@ ENTRIES
 	margin: 1%;
 }
 
-.entry img {
+/*******
+IMAGE & OVERLAY BOX
+*******/
 
+#imgkanjioverlay {
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  margin: 1%; 
 }
+
 
 /*******
 KANJI OVERLAY
 ******/
 
-.kanji-fp {
+#kanjioverlay {
 	color: #fff;
 	position: absolute;
 	top: 0;
@@ -145,21 +150,32 @@ KANJI OVERLAY
 	justify-content: center;
 	align-items: center;
 	background: rgba(0,0,0, .65);
-  font-size: 2em;
-
+  font-size: 7em;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
-.kanji-fp p {
+#kanjioverlay p {
   margin-top: -15px;
   font-size: 1.5rem;
 }
 
-.kanji-fp {
+#kanjioverlay {
 	opacity: 0;
 	transition: .5s;
 }
-.kanji-fp:hover {
+
+#kanjioverlay:hover {
 	opacity: 1;
+}
+
+/*******
+THUMB TEXT
+*******/
+
+#thumbtext a {
+  color: #000;
+  font-weight: 800;
 }
 
 
@@ -170,9 +186,7 @@ GENERAL
 
 body {
   font-family: 'Acme', sans-serif;
-  /* background-repeat: no-repeat;
-  background-size: 800px 850px;
-  background-position: center; */
+  
 }
 
 #wrapper {
@@ -316,6 +330,18 @@ PAGE: CONTACT
   margin: 0;
 }
 
+/* =================================
+  KANJI OVERLAY
+==================================== */
+
+.kanji {
+  opacity: 0;
+  transition: .5s;
+}
+.kanji:hover {
+  opacity: 1;
+}
+
 
 /*********
 COLORS
@@ -343,11 +369,12 @@ nav {
 #logo h1, h2 {
   color: #fff;
   text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+  text-align: left;
 }
 
 /* links */
 a {
-  color: #6ab47b;
+  color: lightblue;
 }
 
 /* nav link */
@@ -366,44 +393,3 @@ MEDIA QUERIES
 ******/
 
 /* NAVIGATION */
-
-@media screen and (min-width: 660px) {
-  nav {
-
-  }
-}
-
-/* ENTRY DISPLAY */
-
-/*@media (min-width: 0) and (max-width: 768px) {
-  .entry {
-		width: 30%;
-		float: left;
-		margin-left: 4%;
-	}
-}
-
-@media (min-width: 769px) {
-	.entry:nth-child(4n+1) {
-		width: 20%;
-		float: left;
-		margin-left: 4%;
-	}
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-	.entry:nth-child(4n+1) {
-		margin-left: 0;
-		clear: left;
-	}
-}
-
-@media (min-width: 1025px) {
-	.entry {
-		width: 30.63973064%;
-	}
-	.entry:nth-child(3n+1) {
-		margin-left: 0;
-		clear: left;
-	}
-}*/

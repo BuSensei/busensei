@@ -1,5 +1,5 @@
 body {
-  background-image: url('../img/washi.jpg');
+
 }
 
 .page-box {
@@ -26,38 +26,11 @@ PAGE-BOX
 KANJI IMAGE
 **********************/
 
-.kanji {
-  margin-top: -7%;
-  margin-bottom: -7%;
-  width: 50%;
-
-  display: table-cell;
-  vertical-align: middle;
-  transform: translateX(50%);
-
-  font-size: 30vw;
-  text-align: center;
-  display: relative;
-}
-
-.kyuujitai {
-	position: absolute;
-	top: 5%;
-	right: 0;
-	bottom: 0;
-	left: 120%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  z-index: 1;
-  font-size: 5rem;
-}
-
 /**********************
-READINGS AND INFO
+KANJI-INFO-BOX
 **********************/
 
-.kanji-info-box {
+#kanji-info-box {
   width: 100%;
   margin: auto;
   padding-top: 2%;
@@ -65,131 +38,37 @@ READINGS AND INFO
   flex-direction: column;
 }
 
-.info {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.readings {
-  width: 100%;
-  margin: 0, auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.english {
-  width: 100%;
-  margin: 0, auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  border-bottom: 1px dotted;
-}
-
-.vocab {
-  width: 100%;
-}
-
-#radical {
-  color: white;
-}
-
-.jp-type {
-  color: tomato;
-}
-
-.en-type {
-  color: blue;
-}
-
-#vocab-table .vocab-type {
-  color: #000;
-  font-size: 1.5rem;
-}
-
-#vocab-table .jp-type {
-  font-size: .7em;
-}
-
-#vocab-table .en-type {
-  font-size: 1em;
-}
-
 /**********************
-ILLUSTRATION
+ILLUST-OLD-BOX
 **********************/
 
-.illust-old-box {
+/*ILLUSTRATION*/
+
+#illust-old-box {
 
   margin: auto;
-  display: flex;
-  flex-direction: column-reverse;
-  font-size: 1.2em;
-  font-weight: 500;
-  /*width: 80%;*/
-}
-
-.illust {
-  padding-top: 20px;
-}
-
-.illust-pic {
-  /*max-height: 100%;*/
-  display: flex;
-  max-width: 75%;
-  /*margin: auto;*/
-}
-
-.illust-pic [alt="reg"] {
-  margin-left: 15%;
-  align-self: flex-end;
-}
-
-.illust-pic [alt="1"] {
-  /*margin-right: -90px;*/
-  /*margin-left: auto;*/
-  /*margin-top: 0;*/
-  align-self: flex-end;
-}
-
-.illust-pic [alt="2"] {
-  margin-left: -23%;
-  margin-top: 0;
-  align-self: flex-end;
-}
-
-/**********************
-ILLUSTRATION ANIMATION
-**********************/
-
-/*.illust:hover [alt="1"] {
-    transform: translate(-60%,0);
-    transition-duration: 1.5s;
-    transition-delay: 0;
-}
-
-.illust:hover [alt="2"] {
-  transform: translate(-60%,0);
-  transition-duration: 1.5s;
-  transition-delay: .7s;
-}*/
-
-/**********************
-OLD FORMS
-**********************/
-
-.oldforms {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   border-bottom: 1px solid;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#illust-old-box img {
+  margin: auto;
+}
+
+#illust {
+  margin: auto;
+  width: 45%;
+}
+
+/*OLD FORMS*/
+
+#oldforms {
+  margin: auto;
+  width: 45%;
 }
 
 .oldforms img {
@@ -198,121 +77,21 @@ OLD FORMS
 
 }
 
-.old-front {
-  position: relative;
-  line-height: 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-.old-front img {
-  /*width: 250px;*/
-  margin: auto;
-}
-
-/*.old-front img [alt="reg"] {
-  width: auto;
-}*/
-
-.old-back {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  z-index: 1;
-}
-
 /**********************
-OLD FORMS ANIMATION
+INFO
 **********************/
 
-.old-back {
-  opacity: 0;
-  transition: .5s;
+#info {
+  width: 100%;
 }
 
-.oldforms:hover .old-back {
-  opacity: 1;
-}
-
-.oldforms:hover .old-front [alt="front"] {
-  opacity: 0;
-}
 
 /**********************
 MEDIA QUERIES
 **********************/
 
-@media screen and (min-width: 780px) {
-
-  /**** KANJI-INFO-BOX ****/
-
-  .kanji-info-box {
-    flex-direction: row;
-  }
-
-  .kanji {
-    width: 20%;
-    float:left;
-    font-size: 17em;
-    transform: translateX(0);
-    margin: -4% 15% auto auto;
-  }
-
-  .info {
-    width: 50%;
-    float:right;
-  }
-
-  .readings {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  #vocab-table .vocab-type {
-    color: #000;
-    font-size: 2em;
-    white-space: nowrap;
-  }
-
-  #vocab-table .jp-type {
-    font-size: 1em;
-  }
-
-  #vocab-table .en-type {
-    font-size: 1.5em;
-  }
-
-  /**** ILLUST-OLD-BOX ****/
-
-  .illust-old-box {
-    display: flex;
-    margin: auto;
-    margin-top: -7%;
-    max-width: 100%;
-    flex-direction: row-reverse;
-    font-size: 1em;
-  }
-
-  
-  .illust {
-    width: 40%;
-    float: left;
-    margin: auto;
-    padding-top: 0;
-  }
-
-
-  .oldforms {
-    width: 40%;
-    float: right;
-    margin: auto;
-    padding-bottom: 0;
-    border-bottom: none;
+@media screen and (min-width: 600px) {
+  #kanji-info-box {
+    width: 75%;
   }
 }

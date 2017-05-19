@@ -1,5 +1,5 @@
 var kanjiList  = {
-  'turtle': {
+  '亀': {
     'kanji': '亀',
     'radical': '亀',
     'strokes': '11',
@@ -14,11 +14,11 @@ var kanjiList  = {
     'word3': '亀の甲より年の功',
     'word3read': 'かめ　の　こう　より　とし　の　こう',
     'word3english': 'The older, the wiser.',
-    'illustText': 'Animals like the turtle make up many of the 象形文字(shou-kei-mo-ji), or "picture characters." They represent a straight depiction of a creature, item or phenonenom, and were some of the earliest characters ever created.',
+    'illustText': 'Animals like the turtle make up many of the SHOUKEI MOJI (象形文字), or picture-based characters. They represent a straight depiction of a creature, item or phenonenom, and were some of the earliest characters ever created.',
     'oldFormText': 'The bone script character (left) began as simply a drawing of a turtle. The seal script (middle) form is streamlined, but still retains a distinct head, shell, and tail. The modern form (right) is further simplified, with parts of the turtle replaced with common elements to represent the headク body田 and tail乚.'
   },
 
-  'lightning':{
+  '雷':{
     'kanji': '雷',
     'radical': '雨',
     'strokes': '13',
@@ -37,7 +37,7 @@ var kanjiList  = {
     'oldFormText': 'The rain 雨 radical is often used in kanji related to weather. The bottom half is a form of 申, which was designed in the shape of a lightning bolt. Lightning was thought to be a message from the gods, so 申す means "to say" and the 申 element is found in the kanji for god 神.'   
   },
 
-  'old':{
+  '老':{
     'kanji': '老',
     'radical': '耂',
     'strokes': '6',
@@ -55,7 +55,7 @@ var kanjiList  = {
     'illustText': 'What is considered "old age" has drastically shifted since ancient times, and some of our best music is still put out by elderly folk who have traded in their walking sticks for microphone stands.',
     'oldFormText': 'The bone script shows an old man with long hair supported by a cane. In seal script, this became ヒ, which some theories say is a dead body (like in death→死), as old people are "approching death."'   
   },
-  'travel':{
+  '旅':{
     'kanji': '旅',
     'radical': '方',
     'strokes': '6',
@@ -73,7 +73,7 @@ var kanjiList  = {
     'illustText': 'Even in modern-day Japan, tour guides leading groups using flags is a common sight at the train station or airport.',
     'oldFormText': 'The bone script character shows a flag with two people standing beside it indicating a succession of people. This morphed into a flag-bearer left, a flag waving top-right, and two people bottom-right.'
   },
-  'prefecture':{
+  '県':{
     'kanji': '県',
     'radical': '目',
     'strokes': '9',
@@ -91,7 +91,7 @@ var kanjiList  = {
     'illustText': 'The head of a criminal would be put on display at the border as a warning for those entering a territory. In this way, 県 came to represent the demarkation of administrative districts.',
     'oldFormText': 'The bronze script character shows a severed head hanging from a rope. This is reflected in the old form 縣, which is the head(首) element upside-down next to thread(系). The current simplified form omits the thread portion.'
   },
-  'heavy':{
+  '重':{
     'kanji': '重',
     'radical': '里',
     'strokes': '9',
@@ -109,7 +109,7 @@ var kanjiList  = {
     'illustText': 'This kanji depicts a person bearing a heavy sack. It can represent physical weight, emotional weight or value. The Japanese meanings of KASANERU/KASANARU mean to "stack, pile up or overlap" and the reading E is one instance in a stack, e.g., 紙一重(KAMI HITO E), "paper thin" is literally one一 sheet重 of paper紙.',
     'oldFormText': 'Above is the seal script version of 重. It is a combintation of a person and a satchel. Most dictionaries divide the character into 1000(千) + village(里) and categorize under the 里 radical. Though unrelated to the original meaning of 重, ruling over 1,000 villages would be a heavy burden to bear.'
   },
-  'hatch':{
+  '孵':{
     'kanji': '孵',
     'radical': '子',
     'strokes': '14',
@@ -128,7 +128,7 @@ var kanjiList  = {
     'oldFormText': 'Above is an assembled seal script form of 孵. The left is egg(卵), a character thought to be based on frog eggs. The right side is a combination of a hand and a child. Together, it represents outside influence on the incubation and birthing process.'
   },
 
-  'together':{
+  '共':{
     'kanji': '共',
     'radical': '',
     'strokes': '6',
@@ -147,7 +147,7 @@ var kanjiList  = {
     'illustText': '共 is commonly used in TOMO NI (共に) "together" and FUTARI TOMO (二人共) "both of you/us", but is often written in hiragana.'
   },
 
-  'on hand':{
+  '携':{
     'kanji': '携',
     'radical': '扌',
     'strokes': '',
@@ -166,7 +166,7 @@ var kanjiList  = {
     'illustText': '携 is roughly equivalent to "on hand" as in having something "on hand" (CARRY) or being "on hand" to help another (PARTICIPATE). It is the KEI in KEITAI DENWA (携帯電話) "mobile phone."' 
   },
 
-  'spicy':{
+  '辛':{
     'kanji': '辛',
     'radical': '辛',
     'strokes': '7',
@@ -183,5 +183,44 @@ var kanjiList  = {
     'word3english': '',
     'oldFormText': 'This kanji is modeled after a large needle used to tattoo criminals as punishment. The tattoo process can be PAINFUL even using modern technology, so it is no surprise this kanji became associated with pain.',
     'illustText': 'However, this character also came to mean SPICY, which is likely related to the sharp pain experienced while eating spicy foods and the needle-like tingling one feels after you have finished.'
+  },
+
+  '羹':{
+    'kanji': '羹',
+    'radical': '',
+    'strokes': '',
+    'readings': '',
+    'english': 'BEAN JELLY',
+    'word1': '',
+    'word1read': '',
+    'word1english': '',
+    'word2': '',
+    'word2read': '',
+    'word2english': '',
+    'word3': '',
+    'word3read': '',
+    'word3english': '',
+    'oldFormText': 'This kanji was originally 羔(baby lamb) + 弜(steam) + 鬲(cauldron). It was a hot lamb soup enjoyed in ancient China. Instances of 羹 meaning "hot soup" include the proverb 羹に懲りて鱠を吹く (ATSUMONO NI KORITE NAMASU O FUKU) "Burn yourself on hot soup and blow on cold fish salad," i.e., "Once bitten, twice shy." Over time, the character was simplified by removing the 弜 and 鬲 morphed into 美, which itself depicts delicious lamb.',
+    'illustText': 'So, how did the meaning shift to youkan in modern-day Japan, which is a popular jellied confection? Well, Buddhist monks brought this dish among others over from China, but due to their rules against killing and eating meat, the baby lamb was substituted with sweet beans. The kanji 羹 is still used in 羊羹(youkan), but even this "simplified" form is quite an eyeful, not to mention tough to write and fit alongside other kanji on a sign. The official version is 羔+美, but it is not uncommon to see 羔+天, among other slight variations.'
+  },
+
+  '船':{
+    'kanji': '船',
+    'radical': '舟',
+    'strokes': '',
+    'readings': '',
+    'english': 'BOAT',
+    'word1': '',
+    'word1read': '',
+    'word1english': '',
+    'word2': '',
+    'word2read': '',
+    'word2english': '',
+    'word3': '',
+    'word3read': '',
+    'word3english': '',
+    'oldFormText': 'The radical 舟 is a picture of a simple dugout canoe. On the left side is water flowing around an object, representing the boat cutting through the water.',
+    'illustText': 'Usage of the kanji 舟 and 船 can overlap in many cases, but a general rule is the more complicated the kanji, the more complicated the thing it represents. So, while WATASHI BUNE (渡し舟、渡し船) can take either or, the simpler 舟 would conjure images of a small canoe crossing a river and would seem odd for a steamship moving across a large body of water.'
   }
+
 };

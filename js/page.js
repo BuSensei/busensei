@@ -1,4 +1,13 @@
+//HTML入力
+insertHTML = function(id, text) {
+    var element = document.getElementById(id);
+    element.innerHTML += text;
+}; //pop with HTML
+
+
+//*************
 //HEADER CONTENT
+//*************
 
 var headerContent = `
   <nav>
@@ -14,21 +23,43 @@ createHeader = function(headerContent) {
   insertHTML("header", headerContent);  
 };
 
-insertHTML = function(id, text) {
-    var element = document.getElementById(id);
-    element.innerHTML += text;
-}; //pop with HTML
-
-
 createHeader(headerContent);
 
+//*************
+//告知
+//*************
+
+var announceContent = `
+  <a href="https://www3.nhk.or.jp/nhkworld/en/tv/japaneasy/busensei/"><img src="./img/kanjidojo.jpg"></a>
+  <center>
+    <p style="font-weight:800;">
+      <span style="text-decoration:underline;">
+        BuSensei's Kanji Dojo
+      </span>
+      <br>
+      ★Now on NHK Japan Easy 2!★
+    </p> 
+    Simple lessons on the history and construction of kanji using fun, easy-to-understand illustrations!<br>
+  </center>
+`
+
+createAnnounce = function(announceContent) {
+  insertHTML("announce", announceContent);
+};
+
+createAnnounce(announceContent);
+
+//*************
 //PAGE BODY
+//*************
 
 var $allEntries = $('<div class="all-entries" id="all-entries"></div>');
 
 $("body").append($allEntries);
 
+//*************
 //FOOTER CONTENT
+//*************
 
 var footerContent = `
   <a href="http://twitter.com/busensei">

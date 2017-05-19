@@ -6,9 +6,11 @@ var thumbs = [
   ["prefecture", "県"],
   ["spicy", "辛"],
   ["on hand", "携"],
+  ["bean jelly", "羹"],
   ["heavy", "重"],
   ["hatch", "孵"],
   ["together", "共"],
+  ["boat", "船"]
   ]; 
 
 
@@ -23,7 +25,7 @@ createThumbs = function(thumbs) {
       //IMAGE&OVERLAY DIV OPEN
 
       thumbContent += '<img src="img/thumb/';
-      thumbContent += thumbs[i][0] + 'thumb.png">';
+      thumbContent += thumbs[i][1] + 'thumb.png">';
       //THUMB IMAGE
 
       thumbContent += '<div id="kanjioverlay">';
@@ -42,8 +44,8 @@ createThumbs = function(thumbs) {
       //THUMB TEXT OPEN
 
       thumbContent += '<p><center><a ';
-      thumbContent += 'id="' + thumbs[i][0] + '"';
-      thumbContent += 'href="kanji/' + thumbs[i][0] + '.html">';
+      thumbContent += 'id="' + thumbs[i][1] + '"';
+      thumbContent += 'href="kanji/' + thumbs[i][1] + '.html">';
       thumbContent += ' ';
       thumbContent += thumbs[i][0].toUpperCase();
       thumbContent += ' ';

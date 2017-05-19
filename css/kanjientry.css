@@ -1,5 +1,5 @@
 body {
-
+  height: 100%;
 }
 
 .page-box {
@@ -13,14 +13,15 @@ PAGE-BOX
 **********************/
 
 .page-box {
-  background-image: url('../img/washi.jpg');
+  background-image: url('../img/sketch.jpg');
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 5;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   display: none;
+  overflow: scroll;
 }
 
 /**********************
@@ -33,6 +34,7 @@ KANJI-INFO-BOX
 
 #kanji-info-box {
   width: 100%;
+
   margin: auto;
   padding-top: 2%;
   display: flex;
@@ -58,6 +60,8 @@ ILLUST-OLD-BOX
 
 #illust-old-box img {
   margin: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 #illust {
@@ -84,6 +88,7 @@ INFO
 
 #info {
   width: 100%;
+  font-weight: 1000;
 }
 
 

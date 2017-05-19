@@ -93,6 +93,28 @@ nav a {
 ALL-ENTRIES
 *******/
 
+#announce {
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid;
+}
+
+#announce img {
+  margin: auto;
+  float: right;
+  
+  padding: 5px;
+  border-radius: 50px;
+
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+/*******
+ALL-ENTRIES
+*******/
+
 .main-header {
 	text-align: center;
 	/*padding: 2.8em 0;*/
@@ -105,19 +127,18 @@ ALL-ENTRIES
   flex-wrap: wrap;
 }
 
-.all-entries div:nth-child(2n+1) {
-	clear: left;
-}
-
 /*******
 ENTRIES
 *******/
 
 .entry {
-	position: relative;
+  background: none;
+  position: relative;
 	line-height: 0;
 	overflow: hidden;
 	margin: 1%;
+  border: 1px solid green;
+  border-radius: 25px;
 }
 
 /*******
@@ -129,6 +150,13 @@ IMAGE & OVERLAY BOX
   line-height: 0;
   overflow: hidden;
   margin: 1%; 
+}
+
+#imgkanjioverlay img {
+  max-width: 100%;
+  padding: 5px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
 }
 
 
@@ -152,7 +180,7 @@ KANJI OVERLAY
 	background: rgba(0,0,0, .65);
   font-size: 7em;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
 #kanjioverlay p {
@@ -177,9 +205,17 @@ THUMB TEXT
   color: #fff;
   font-weight: 800;
   background-color: #599a68; 
-  box-shadow: 2px 1px 5px 2px rgba(0,0,0,0.2);
+  /*box-shadow: 2px 1px 5px 2px rgba(0,0,0,0.2);*/
   border-radius: 25px;
   padding: 5px;
+  transition: .25s;
+
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+#thumbtext a:hover {
+  background-color: red;
 }
 
 
@@ -189,13 +225,11 @@ GENERAL
 
 
 body {
-  font-family: 'Acme', sans-serif;
   
 }
 
 #wrapper {
-  background-image: url('./img/washi.jpg');
-  max-width: 940px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 5%;
 
@@ -206,10 +240,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 5%;
-}
-
-#washi {
-  background-image: url('../img/washi.jpg');
 }
 
 a {
@@ -353,7 +383,7 @@ COLORS
 
 /* site body */
 body {
-  background-image: url('../img/washi.jpg');
+  background-image: url('../img/sketch.jpg');
   background-color: #fff;
   color: #000;
 }

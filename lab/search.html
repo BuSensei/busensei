@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/search.css">
+      
+    <script 
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  
+  </head>
+  
+  <body>
+
+    <div id="search">
+      <p>Enter something:</p>
+      <form>
+        <input type="text" name="term" id="term" placeholder="Type here">
+        <button onclick="getTerm(event);">Search!</button>
+        <button id="cat" onclick="catButton(event);">Cat Proverbs!</button>
+      </form>
+      <p id="result"></p>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script src="./search.js"></script>
+    <script src="./cotowaza.json"</script>
+  </body>
+</html>
